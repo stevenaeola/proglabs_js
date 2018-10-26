@@ -9,7 +9,7 @@
 
 1. If you are not already familiar with HTML, read up about it on [MDN](https://developer.mozilla.org/en-US/docs/Web/HTML) or look at the resources on [The Odin Project](https://www.theodinproject.com/courses/web-development-101/lessons/html-and-css-basics). We are not going to be looking in detail at HTML5 features such as HTML5 forms, canvas, multimedia etc but feel free to have a look.
 
-2.  Similarly you need familiarity with CSS on[MDN](https://developer.mozilla.org/en-US/docs/Web/CSS) or [The Odin Project](https://www.theodinproject.com/courses/web-development-101/lessons/html-and-css-basics) including selectors and combinators, but not CSS3 specific features.
+2.  Similarly you need familiarity with CSS on [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS) or [The Odin Project](https://www.theodinproject.com/courses/web-development-101/lessons/html-and-css-basics) including selectors and combinators, but not CSS3 specific features.
 
 
 3. Write a one-page HTML document about the application of computing that you think makes the best contribution to society. You should include
