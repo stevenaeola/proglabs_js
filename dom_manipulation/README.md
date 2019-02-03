@@ -1,4 +1,4 @@
-# Practical: Using Form Data in the Browser
+# Practical: Generating poetry with DOM manipulation
 
 ## Aims
 
