@@ -66,10 +66,10 @@
     Lastly, edit your package.json file so that the `scripts` section looks like this:
     
     ```
-"scripts": {
+    "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
         "start": "node hello.js"
-},
+    },
     ```
     
     This has added the `start` script so that you can run your program simply with
