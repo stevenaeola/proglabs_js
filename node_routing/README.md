@@ -125,7 +125,7 @@
    which is basically the same syntax that JavaScript uses for object literals (although there are
    [some small
    differences](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON),
-   most notably that object keys must be written in quotes). So this file contains a list (array) of
+   most notably that object keys must be written in quotes). So <potato_recipes.json> contains a list (array) of
    objects.
    
      In nodejs you can use `require` for modules, but also for JSON data, so you can simply write
