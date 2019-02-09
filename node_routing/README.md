@@ -159,7 +159,7 @@
      
     * Change your server to have a route `new` which is accessed via POST, with something like
     ```
-       app.post('new', function( ...){ ...});
+       app.post('/new', function( ...){ ...});
     ```
       Link it up to your web page and get it going like it was before, except via POST. Notice that
    the URL no longer includes the query string: the form data is now submitted via the request body.
