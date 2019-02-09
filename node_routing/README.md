@@ -134,10 +134,10 @@
      var recipes = require('./potato_recipes.json');
      ```
    
-    Make this a global variable (not usually a great idea), i.e. not defined inside any function, so
+     Make this a global variable (not usually a great idea), i.e. not defined inside any function, so
     that it is accesible from all of your handlers. 
    
-    Do this with a new project (new directory, run `npm init` again) and define an endpoint (i.e. a route)
+     Do this with a new project (new directory, run `npm init` again) and define an endpoint (i.e. a route)
    which takes a query string parameter that is used as a search key, returning only those recipes
    that match. If you need help, then you can look at [working with
    objects](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Working_with_Objects) and
