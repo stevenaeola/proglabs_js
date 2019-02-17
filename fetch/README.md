@@ -5,7 +5,7 @@
 * Understanding asynchronous requests and AJAX
 * Serving HTML pages with `express.static`
 * Using JavaScript promises
-
+* Working with exceptions: `throw`, `try` and `catch`
 
 ## Tasks
 
