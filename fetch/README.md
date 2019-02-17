@@ -88,8 +88,8 @@ window.addEventListener('click', function(event){
      * Link the two together using `fetch`
      
    The pieces are now in place for you to do this. Once you have
-   decided on what you want your web-site to do, start building the HTML
+   decided on what you want your web-site to do, start building the HTML.
    
-[lecture]: https://github.com/stevenaeola/gitpitch/tree/master/prog/js_fetch/README.md
+[lecture]: https://github.com/stevenaeola/gitpitch/tree/master/prog/js_fetch/
 [previous practical]: https://github.com/stevenaeola/proglabs_js/tree/master/node_routing/
 [second assignment]: https://github.com/stevenaeola/gitpitch/tree/master/prog/assessment_2_prog_1819
