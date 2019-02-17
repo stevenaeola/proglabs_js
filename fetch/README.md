@@ -91,5 +91,5 @@ window.addEventListener('click', function(event){
    decided on what you want your web-site to do, start building the HTML
    
 [lecture]: https://github.com/stevenaeola/gitpitch/tree/master/prog/js_fetch/README.md
-[previous practical]: https://github.com/stevenaeola/proglbs_js/tree/master/node_routing/
+[previous practical]: https://github.com/stevenaeola/proglabs_js/tree/master/node_routing/
 [second assignment]: https://github.com/stevenaeola/gitpitch/tree/master/prog/assessment_2_prog_1819
