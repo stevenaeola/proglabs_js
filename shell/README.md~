@@ -23,6 +23,6 @@ If you are using your own machine you can either install putty (for Windows) to 
 
 1. Try as many different ways as you can for accessing Linux/UNIX/BSD.
 
-2. Then choose one of them and complete the UNIX tutorial at <http://swcarpentry.github.io/shell-novice/>
+2.Then choose one of them and complete the UNIX tutorial at <http://swcarpentry.github.io/shell-novice/>
  
 3. (Optional). If you are already familiar with UNIX/Linux and/or want to do more, then work through the examples in the lecture notes from the first lecture, covering slides 15-19.
