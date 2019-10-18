@@ -29,5 +29,7 @@ history with tools like github.
    username that doesn't identify you_ for privacy's sake. (You don't
    need to wait for registration to complete before starting the tutorial.)
 
-2. Complete the [Software Carpentry git
+2. Using Linux, (see [UNIX/Linux shell
+   practical](https://github.com/stevenaeola/proglabs_js/tree/master/shell)
+ complete the [Software Carpentry git
    tutorial](http://swcarpentry.github.io/git-novice/) apart from section 14 Supplemental: Using Git from RStudio.
