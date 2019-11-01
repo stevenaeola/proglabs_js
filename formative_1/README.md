@@ -19,13 +19,13 @@ This assignment is formative, so the assessment does not count towards the final
 
    You might also like to choose a tool for planning the tasks, as outlined in the [lecture](https://gitpitch.com/stevenaeola/gitpitch/master?p=prog/git_collab#/6).
    
-3. Develop a set of web pages describing applications of computing that make positive contributions  to society, linking with each other and to external pages where relevant. Include an index page and navigation links between the pages.
+3. Develop a set of web pages describing applications of computing that make positive contributions  to society, linking with each other and to external pages where relevant. Include an index page and navigation links between the pages. If you're short of ideas look at [my tweets about CS doing good stuff](https://twitter.com/CSdoesgood).
 
 4. The pages should use a consistent theme based on a web framework such as [Bootstrap](https://getbootstrap.com).
 
 5. Each page should be authored by one group member, with author details included, but written by somebody else. Include links to the author's github pages and linkedin profile where appropriate. The university has some [guidance on using linkedin](https://www.dur.ac.uk/careers/students/careerplanning/research/socialmedia/linkedin/).
 
-6. Once you have a good set of pages you can release them by cloning them into an appropriate sub-directory of your public_html directory.
+6. Once you have a good set of pages you can release them by pushing them to gitpages (see practical on [HTML and CSS](https://github.com/stevenaeola/proglabs_js/tree/master/html_css))
 
 7. Next week your work will be peer-assessed (and you will peer assess others' work) on these criteria:
 
