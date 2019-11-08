@@ -32,8 +32,9 @@ Peer review is a crucial part of professional practice in software development. 
        - Balanced contributions from members
        - Not completed at the last minute
 
-   For each of these numbered headings you should rate it as one of the following, and add a comment:
+   For each of these numbered headings you should rate it as one of the following, according to (the university marking and classification conventions)[https://www.dur.ac.uk/resources/university.calendar/volumeii/2019.2020/coreregsug.pdf] (point 94), and add a comment:
    
+       - Perfect
        - Exemplary
        - Outstanding
        - Excellent
@@ -50,5 +51,5 @@ Peer review is a crucial part of professional practice in software development. 
 
 8. Back in your original groups, review the incoming pull requests. Add the review files to your repository. Fix any problems they have identified and respond the the pull request indicating what changes you have made.
 
-9. If you finish all of that, or if you have to wait for other people to complete reviews etc, start on the [p5 tutorials](https://p5js.org/learn/).
+9. If you finish all of that, or if you have to wait for other people to complete reviews etc, start on a SVG tutorial at [w3c](https://www.w3.org/Graphics/SVG/IG/resources/svgprimer.html), [MDN](https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial) or one from [flaviocopes](https://flaviocopes.com/svg/).
        
