@@ -1,15 +1,16 @@
-# Practical: Scalable Vector Graphic
+# Practical: Scalable Vector Graphics (SVG)
 
 ## Aims
 
 * Learn about SVG
 * Build a basic data visualisation
+* Start using d3
 
 
 ## Tasks
 
 
-1. Work through a SVG tutorial. SVG is a web standard, so is managed by the wc3 (World Wide Web Consortium). They have a tutorial (the last one on this list) but is a bit long/technical. My personal favourites are (in my order of preference):
+1. Work through one of the SVG tutorials below. SVG is a web standard, so is managed by the wc3 (World Wide Web Consortium). Start with the first tutorial (MDN). If you want another simple explanation look at the flaviocopes tutorial. If you want a more in-depth explanation, look at the w3c tutorial.
   * [MDN](https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial) up to "Basic Transformations", although you can skip over "Gradients" and "Patterns" on first reading
   * One from [flaviocopes](https://flaviocopes.com/svg/) up to "Styling elements"
   * [w3c](https://www.w3.org/Graphics/SVG/IG/resources/svgprimer.html) You can read chapter 1 if you want to, but it's not essential. Focus on [Chapter II: SVG Basics](https://www.w3.org/Graphics/SVG/IG/resources/svgprimer.html#SVG_Basics)
