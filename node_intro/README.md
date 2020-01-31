@@ -20,6 +20,7 @@
   ```
 
   then run it with `node hello.js`. See the [lecture notes](https://github.com/stevenaeola/gitpitch/tree/master/prog/js_intro_node) for details. 
+  * On dude it is also possible to start a shell with node just by searching for "node" in the start menu. Note the a nodejs console is not the same thing as a shell with access to node. In a node console you execute JavaScript directly (e.g. with `console.log("Hello world")` - in a shell you would run `node hello.js`.
 
 2. Running a simple web server with nodejs.
 
