@@ -188,8 +188,7 @@
 
 7. The potato recipes were extracted from a one-off request that was made to an API. You could do
    this 'live' in your server code, perhaps using a package like
-   [request](https://www.npmjs.com/package/request). This is one of the extensions for the [second
-   assignment](https://github.com/stevenaeola/gitpitch/tree/master/prog/assessment_2_prog_1819). Have
+   [request](https://www.npmjs.com/package/request).  Have
    a look through the directories of APIs listed there, and see if any of them could work with a
    web-site that you would like to build.
 
