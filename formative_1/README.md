@@ -9,7 +9,7 @@
 
 This assignment is formative, so the assessment does not count towards the final mark for the module.
 
-1. Choose a group to work with in your timetabled practical. Aim for diversity of teams: not just people like you. The best way to so this is to choose a partner that you know, then find another pair to work with who you don't know. Groups of three or four are best.
+1. You will be assigned to a group of three or four by the demonstrators. Remember your room number - you will come back to the same room next week.
 
 2. Choose a way of collaborating with github:
 
