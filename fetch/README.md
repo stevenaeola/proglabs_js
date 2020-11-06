@@ -71,8 +71,7 @@ window.addEventListener('click', function(event){
    
 6. The same-origin policy does not allow your web page to make `fetch`
    requests to sites outside the domain the web page came from
-   originally. Later I will talk about how to use CORS to overcome
-   this. However your server-side code is free to make requests
+   originally. However your server-side code is free to make requests
    wherever it likes. You can use the [node-fetch
    package](https://www.npmjs.com/package/node-fetch) to use the same
    style of coding in your server as you have just learnt to do in the
@@ -80,16 +79,5 @@ window.addEventListener('click', function(event){
    [request](https://www.npmjs.com/package/request) package mentioned
    in the [previous practical][]. 
    
-7. Start working on bringing this together for the [second
-   assignment][]. In the [lecture][] I suggested three steps:
-   
-     * Design your HTML pages with static example content
-     * Build your server with a REST API (GET and POST methods)
-     * Link the two together using `fetch`
-     
-   The pieces are now in place for you to do this. Once you have
-   decided on what you want your web-site to do, start building the HTML.
-   
-[lecture]: https://github.com/stevenaeola/gitpitch/tree/master/prog/js_fetch/
+   [lecture]: https://github.com/stevenaeola/gitpitch/tree/master/prog/js_fetch/
 [previous practical]: https://github.com/stevenaeola/proglabs_js/tree/master/node_routing/
-[second assignment]: https://github.com/stevenaeola/gitpitch/tree/master/prog/assessment_2_prog_1819
