@@ -14,7 +14,7 @@
 
   > The _adjective_ _noun_ _verb_ _adverb_.
 
-  or the equivalent structure in the language you choose. Here _adjective_ should be randomly selected from a list of adjectives (e.g. blue, tall, furry) that you define in your JavaScript code. You should also define a list of nouns, verbs and adverbs to choose from. If you want help choosing some words you could look at <http://www.datamuse.com/>. An example generated sentence would be
+  or the equivalent structure in the language you choose. Here _adjective_ should be randomly selected from a list of adjectives (e.g. blue, tall, furry) that you define in your JavaScript code. You should also define a list of nouns, verbs and adverbs to choose from. If you want help choosing some words you could look at <https://www.datamuse.com/>. An example generated sentence would be
 
   > The blue dog eats lazily.
 
