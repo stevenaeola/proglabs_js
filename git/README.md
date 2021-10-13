@@ -23,7 +23,7 @@ history with tools like github.
 
 ## Tasks
 
-1. If you are using your own machine then [install git](https://github.com/git-guides/install-git)
+1. If you are using your own machine then [install git](https://github.com/git-guides/install-git). If you're using a CIS lab machine then you will need to make sure that it is booted into Linux to access the command line.
 
 2. Register with [GitHub
    education](https://education.github.com/students) to get a range of
