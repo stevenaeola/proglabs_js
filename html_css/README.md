@@ -9,11 +9,11 @@
 
 ### Learn about HTML 
 
-If you are not already familiar with HTML, read up about it on [MDN](https://developer.mozilla.org/en-US/docs/Web/HTML) or look at the resources on [The Odin Project](https://www.theodinproject.com/courses/web-development-101/lessons/html-and-css-basics). We are not going to be looking in detail at HTML5 features such as HTML5 forms, canvas, multimedia etc but feel free to have a look.
+If you are not already familiar with HTML, read up about it on [MDN](https://developer.mozilla.org/en-US/docs/Web/HTML). We are not going to be looking in detail at HTML5 features such as HTML5 forms, canvas, multimedia etc but feel free to have a look.
 
 ###  Learn about CSS
 
-Similarly you need familiarity with CSS on [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS) or [The Odin Project](https://www.theodinproject.com/courses/web-development-101/lessons/html-and-css-basics) including selectors and combinators, but not CSS3 specific features.
+Similarly you need familiarity with CSS on [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS) including selectors and combinators, but not CSS3 specific features.
 
 
 ### Write a document
@@ -39,7 +39,7 @@ In either case you will need to `git commit` your changes and `git push` them to
   
 ### Use a framework
 
-  Make a copy of your HTML page and change it so that it uses either [bootstrap](http://getbootstrap.com/) or [Semantic UI](https://semantic-ui.com/). If you've used one of them before then try the other one. You should have to change very little of the HTML content, only the CSS classes referred to. Use templates that are provided in the documentation where relevant.
+  Make a copy of your HTML page and change it so that it uses either [bootstrap](http://getbootstrap.com/) or [an alternative](https://classpert.com/blog/top-bootstrap-alternatives). If you've used one of them before then try another one. You should have to change very little of the HTML content, only the CSS classes referred to. Use templates that are provided in the documentation where relevant.
 
 ### Make it mobile-friendly
 
