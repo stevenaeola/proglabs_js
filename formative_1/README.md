@@ -9,7 +9,7 @@
 
 This assignment is formative, so the assessment does not count towards the final mark for the module.
 
-1. You will be assigned to a group of three or four by the demonstrators. Remember your room number - you will come back to the same room next week.
+1. You will be assigned to a group of three or four by the demonstrators. 
 
 2. Choose a way of collaborating with github:
 
@@ -17,7 +17,7 @@ This assignment is formative, so the assessment does not count towards the final
    2. One person owns the repository, others are collaborators
    3. Collaborators form an organization for multiple projects
 
-   You might also like to choose a tool for planning the tasks, as outlined in the [lecture](https://gitpitch.com/stevenaeola/gitpitch/master?p=prog/git_collab#/6).
+   You might also like to choose a tool for planning the tasks, as outlined in the [lecture](https://github.com/stevenaeola/progblack_lectures/tree/main/git_collab).
    
 3. Develop a set of web pages describing applications of computing that make positive contributions  to society, linking with each other and to external pages where relevant. Include an index page and navigation links between the pages. If you're short of ideas look at [my tweets about CS doing good stuff](https://twitter.com/CSdoesgood).
 
