@@ -10,15 +10,15 @@
 
 Peer review is a crucial part of professional practice in software development. We use it here for formative assessment, but we will also be using it later for summative assessments.
 
-1. Make sure that your group work is available in a public git repository, and is published somewhere via gitpages or equivalent. You may have to change your repository from private to public.
+1. Make sure that your group work is available in a public git repository, and is published somewhere via gitpages or equivalent. You may have to change your repository from private to public. 
 
-2. Rejoin the same room that you did for last week's practical. Before you join the room make sure that the demonstrators have the url of your group's site.
+2. Carry on working in the same groups as last time.
 
-3. Review the work of the groups in rooms `(x+1)%#rooms`  and `(x-1)%#rooms` where `x` is your room number.
+3. As a group, review the work of two other groups in your practical timeslot. If you can't find an easy way to find groups to review, ask the demonstrators to allocate you groups to review.
 
 4. Fork the project you are reviewing into your github repository. Any detailed comments (spelling/grammar errors, graphical inconsistencies, HTML errors etc) should be highlighted by adding an [HTML comment](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Getting_started#HTML_comments).
 
-5. Add a review text file to your cloned version of the repository called _roomNumber_.md. You will have to clone your forked repository into your local filespace, work on it there and push the changes back.
+5. Add a review text file to your cloned version of the repository called review_n_.md where _n_ is a number you invent which is likely to be different to the number that other reviewing groups come up with. You will have to clone your forked repository into your local filespace, work on it there and push the changes back.
 
 6. In this file write a review of the site you have looked at under the following headings
 
@@ -49,6 +49,6 @@ Peer review is a crucial part of professional practice in software development. 
 
 7. Commit and push your comments and review file to your forked repository, then make a pull request of the changes in your forked repository to the original repository. [Read about pull requests](https://help.github.com/articles/creating-a-pull-request-from-a-fork/) if it's not clear what to do.
 
-8. Having carried our both of the reviews of other gropus, look together at the incoming pull requests. Add the review files to your repository. Fix any problems they have identified and respond the the pull request indicating what changes you have made.
+8. Having carried our both of the reviews of other gropus, look together at the incoming pull requests. Add the review files to your repository. Fix any problems they have identified and respond to the pull request indicating what changes you have made.
 
        
