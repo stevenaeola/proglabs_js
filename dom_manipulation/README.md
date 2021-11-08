@@ -14,7 +14,7 @@
 
   > The _adjective_ _noun_ _verb_ _adverb_.
 
-  or the equivalent structure in the language you choose. Here _adjective_ should be randomly selected from a list of adjectives (e.g. blue, tall, furry) that you define in your JavaScript code. You should also define a list of nouns, verbs and adverbs to choose from. If you want help choosing some words you could look at <https://www.datamuse.com/>. An example generated sentence would be
+  or the equivalent structure in the language you choose. Here _adjective_ should be randomly selected from a list of adjectives (e.g. blue, tall, furry) that you define in your JavaScript code. You should also define a list of nouns, verbs and adverbs to choose from. If you want help choosing some words you could look at <https://www.wordsapi.com/>. An example generated sentence would be
 
   > The blue dog eats lazily.
 
@@ -28,6 +28,6 @@
 
 3. Adapt your example so that instead of having the words predefined in the JavaScript code, they are typed in by the user. Do this with four separate [textarea](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea) inputs: one for adjectives; one for nouns; etc. You will need to give each _textarea_ a different _id_. You can access the value in most form elements (like _textarea_) using the _value_ property (a bit like the _innerHTML_ property we used before). You will need to take the string input by the user and break it into an array of words - there is a method in the [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) prototype which does this for you.
 
-4. Extend your work to generate a poem (maybe a [haiku](https://www.poetryfoundation.org/learn/glossary-terms/haiku-or-hokku) or a [limerick](https://www.poetryfoundation.org/learn/glossary-terms/limerick)) or song lyric (maybe the [blues](http://www.analogman.com/singblues.htm)). You could also take inspiration from <https://www.poem-generator.org.uk> or <https://www.song-lyrics-generator.org.uk/>. Generate it randomly in your JavaScript. Maybe you could make the page look pretty too with good HTML and CSS.
+4. Extend your work to generate a poem (maybe a [haiku](https://www.poetryfoundation.org/learn/glossary-terms/haiku-or-hokku) or a [limerick](https://www.poetryfoundation.org/learn/glossary-terms/limerick)). You could also take inspiration from <https://www.poem-generator.org.uk> or <https://www.song-lyrics-generator.org.uk/>. Generate it randomly in your JavaScript. Maybe you could make the page look pretty too with good HTML and CSS.
 
 
