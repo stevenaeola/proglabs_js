@@ -19,8 +19,8 @@
    very simple message: 
 
     ```
-    var express = require('express')
-    var app = express()
+    const express = require('express')
+    const app = express()
 
     app.get('/', function(req, resp){
        resp.send('Hello world')
@@ -29,11 +29,13 @@
     app.listen(8090)
     ```
 
-    Try running this with
+    Try running this either on the command line or VSC terminal with
     
     ```
     node hello.js
     ```
+
+    or directly from the Run/Debug options within VSC.
 
     For this to work you will need to install the module `express` which you do with
     
@@ -192,5 +194,5 @@
    a look through the directories of APIs listed there, and see if any of them could work with a
    web-site that you would like to build.
 
-[lecture]: https://github.com/stevenaeola/gitpitch/tree/master/prog/js_intro_node/README.md
-[random]: https://github.com/stevenaeola/gitpitch/blob/master/prog/js_intro_node/express_parameters.js
+[lecture]: https://github.com/stevenaeola/progblack_lectures/blob/main/js_intro_node/README.md
+[random]: https://github.com/stevenaeola/progblack_lectures/blob/main/js_intro_node/express_parameters.js
