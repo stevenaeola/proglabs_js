@@ -94,7 +94,7 @@
       express](https://expressjs.com/en/guide/routing.html). Extract this value from `req.params`
       within the handler function and send it back. Have a look at the first handler function in the
       [example on random numbers][random] in the [lecture][] if you're not
-      sure. Test this out by sending a an appropriate browser request like
+      sure. Test this out by sending an appropriate browser request like
       <http://127.0.0.1:8090/wave/everybody>: this should say something like `waving at everybody`
 
 4. Next you are going to access a variable encoded in a query string (i.e. the bit after the ? in
@@ -121,9 +121,7 @@
 
 5.   Make your GET request do something more interesting than just printing out the parameter: use the
    parameter as a search key. Firstly you need some data. I have provided some potato recipes for
-   you, based on a response that I got from <http://www.recipepuppy.com/> which provides a
-   searchable open database of recipes. The data is from this request:
-   <http://www.recipepuppy.com/api/?i=potato>. The format is JSON (JavaScript Object Notation),
+   you, based on a response that I got from <http://www.recipepuppy.com/>. The format is JSON (JavaScript Object Notation),
    which is basically the same syntax that JavaScript uses for object literals (although there are
    [some small
    differences](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON),
@@ -191,7 +189,7 @@
 7. The potato recipes were extracted from a one-off request that was made to an API. You could do
    this 'live' in your server code, perhaps using a package like
    [node-fetch](https://www.npmjs.com/package/node-fetch).  Have
-   a look through the directories of APIs listed there, and see if any of them could work with a
+   a look through the directories of APIs listed at <https://mixedanalytics.com/blog/list-actually-free-open-no-auth-needed-apis/> or <https://apipheny.io/free-api/>, and see if any of them could work with a
    web-site that you would like to build.
 
 [lecture]: https://github.com/stevenaeola/progblack_lectures/blob/main/js_intro_node/README.md
