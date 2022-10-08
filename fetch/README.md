@@ -40,7 +40,7 @@ window.addEventListener('click', function(event){
   ```
   
   See the [example code from the
-  lecture](https://github.com/stevenaeola/gitpitch/blob/master/prog/js_fetch/server.js)
+  lecture](https://github.com/stevenaeola/progblack_lectures/tree/main/js_fetch/server.js)
   to see how I did this. You can also check out the example
   client-side code in the [lecture][] to see how to piece it together.
   
@@ -79,5 +79,5 @@ window.addEventListener('click', function(event){
    [request](https://www.npmjs.com/package/request) package mentioned
    in the [previous practical][]. 
    
-   [lecture]: https://github.com/stevenaeola/gitpitch/tree/master/prog/js_fetch/
+   [lecture]: https://github.com/stevenaeola/progblack_lectures/tree/main/js_fetch
 [previous practical]: https://github.com/stevenaeola/proglabs_js/tree/master/node_routing/

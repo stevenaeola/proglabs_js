@@ -8,20 +8,18 @@
 
 ## Tasks
 
-1. Starting with node on dude (or your own machine).
+1. Starting with node on a lab PC (Windows or Linux) or your own machine.
 
-  * On dude first of all run nodeJS via the app hub to set up the paths etc. You can close the window that appears when you do this.
-  * Start a Command Prompt from the start menu
-  * Use `cd` and `mkdir` to get to an appropriate place in the file system. Don't forget that Windows uses backslashes for directory delimiters.
-  * In a new directory initialise create a file `hello.js` which contains the line
+  * If you don't already have nodejs installed on your machine then [install it](https://nodejs.org/en/download/)
+  * Open Visual Studio Code
+  * Create a new file called `hello.js` containing the line
 
   ```
   console.log("Hello world")
   ```
 
-  then run it with `node hello.js`. See the [lecture notes](https://github.com/stevenaeola/gitpitch/tree/master/prog/js_intro_node) for details. 
-  * On dude it is also possible to start a shell with node just by searching for "node" in the start menu. Note the a nodejs console is not the same thing as a shell with access to node. In a node console you execute JavaScript directly (e.g. with `console.log("Hello world")` - in a shell you would run `node hello.js`.
-
+  then run it through the _Run_ menu, or the _Run and Debug_ option on the LHS navigator. See the [lecture notes](https://github.com/stevenaeola/gitpitch/tree/master/prog/js_intro_node) for details. 
+  
 2. Running a simple web server with nodejs.
 
   * Read the tutorial and run the code at the [nodejs getting started tutorial](https://nodejs.org/en/docs/guides/getting-started-guide/)
