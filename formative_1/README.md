@@ -25,7 +25,7 @@ This assignment is formative, so the assessment does not count towards the final
 
 5. Each page should be authored by one group member, with author details included, but written by somebody else. Include links to the author's github pages and linkedin profile where appropriate. The university has some [guidance on using linkedin](https://www.dur.ac.uk/careers/students/careerplanning/research/socialmedia/linkedin/).
 
-6. Once you have a good set of pages you can release them by pushing them to gitpages (see practical on [HTML and CSS](https://github.com/stevenaeola/proglabs_js/tree/master/html_css))
+6. Once you have a good set of pages you can release them by pushing them to gitpages (see practical on [HTML and CSS](https://github.com/stevenaeola/proglabs_js/tree/main/html_css))
 
 7. Next week your work will be peer-assessed (and you will peer assess others' work) on these criteria:
 

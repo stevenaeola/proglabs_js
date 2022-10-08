@@ -18,7 +18,7 @@
   console.log("Hello world")
   ```
 
-  then run it through the _Run_ menu, or the _Run and Debug_ option on the LHS navigator. See the [lecture notes](https://github.com/stevenaeola/gitpitch/tree/master/prog/js_intro_node) for details. 
+  then run it through the _Run_ menu, or the _Run and Debug_ option on the LHS navigator. See the [lecture notes](https://github.com/stevenaeola/progblack_lectures/tree/main/js_intro_node) for details. 
   
 2. Running a simple web server with nodejs.
 
@@ -32,7 +32,7 @@
   * Make the changes and re-run the programme and see if you are correct. (Note that you stop the program with Ctrl-C.)
 
 
-3. Read more about [http requests in node](https://nodejs.org/en/docs/guides/anatomy-of-an-http-transaction/). Try out the examples there. You may wish to refer to my [notes on http](https://github.com/stevenaeola/gitpitch/tree/master/prog/http)
+3. Read more about [http requests in node](https://nodejs.org/en/docs/guides/anatomy-of-an-http-transaction/). Try out the examples there. You may wish to refer to my [notes on http](https://github.com/stevenaeola/progblack_lectures/tree/main/http)
 
 4. If you get all of this done you have time to look at some other related topics:
   * [Blocking vs non-blocking](https://nodejs.org/en/docs/guides/blocking-vs-non-blocking/)

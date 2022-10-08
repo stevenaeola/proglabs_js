@@ -80,4 +80,4 @@ window.addEventListener('click', function(event){
    in the [previous practical][]. 
    
    [lecture]: https://github.com/stevenaeola/progblack_lectures/tree/main/js_fetch
-[previous practical]: https://github.com/stevenaeola/proglabs_js/tree/master/node_routing/
+[previous practical]: https://github.com/stevenaeola/proglabs_js/tree/main/node_routing/

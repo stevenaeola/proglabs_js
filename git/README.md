@@ -23,7 +23,7 @@ history with tools like github.
 
 ## Tasks
 
-1. If you are using your own machine then [install git](https://github.com/git-guides/install-git). If you're using a CIS lab machine then you will need to make sure that it is booted into Linux to access the command line.
+1. If you are using your own machine then [install git](https://github.com/git-guides/install-git). If you're using a CIS lab machine then you will need to make sure that it is booted into Linux to access the command line, or run git with bash prompt from Windows.
 
 2. Register with [GitHub
    education](https://education.github.com/students) to get a range of
@@ -33,4 +33,4 @@ history with tools like github.
 
 3. Using the command line (Terminal in OSX, command prompt or git bash on Windows), 
  complete the [Software Carpentry git tutorial](http://swcarpentry.github.io/git-novice/) apart from section 14 Supplemental: Using Git from RStudio. If you want to develop your command line skills then (another time) try [UNIX/Linux shell
-   tutorial](https://github.com/stevenaeola/proglabs_js/tree/master/shell))
+   tutorial](https://github.com/stevenaeola/proglabs_js/tree/main/shell))
