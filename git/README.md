@@ -23,7 +23,7 @@ history with tools like github.
 
 ## Tasks
 
-1. If you are using your own machine then [install git](https://github.com/git-guides/install-git). If you're using a CIS lab machine then you will need to make sure that it is booted into Linux to access the command line, or run git with bash prompt from Windows.
+1. If you are using your own machine then [install git](https://github.com/git-guides/install-git). If you're using a CIS lab machine then you will need to make sure that it is booted into Linux to access the command line, or run git with bash prompt from Windows. For git bash from Windows on a CIS PC you need to first launch Git client via AppsAnywhere, then search for git: Git Bash will be there as an option.
 
 2. Register with [GitHub
    education](https://education.github.com/students) to get a range of
