@@ -22,11 +22,11 @@ Similarly you need familiarity with CSS on [MDN](https://developer.mozilla.org/e
 
 If you would rather work with somebody else to do this, that is fine.
 
-Now that you have some familiarity with HTML and CSS, have a look at the file <styling-lists.html> which comes from the [MDN tutorial](https://mdn.github.io/learning-area/css/styling-text/styling-lists/unstyled-list.html). 
+Now that you have some familiarity with HTML and CSS, have a look at the file <./styling-lists.html> which comes from the [MDN tutorial](https://mdn.github.io/learning-area/css/styling-text/styling-lists/unstyled-list.html). 
 
 - First, fork this repository <https://github.com/stevenaeola/proglabs_js> on github and clone it to your local machine. [Set the upstream remote](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/configuring-a-remote-for-a-fork) to be my original repository
 - _Optional_ If you would like to, then make a feature branch to work on. See the [lecture notes](https://github.com/stevenaeola/progblack_lectures/tree/main/git_branch) for details. You shouldn't create an issue on my repository for this
-- Within your local copy make some changes to the _styling-lists.html_ file, and/or add one or more new files within the *html_css* directory. Perhaps you can investigate until you find a change that has a useful, interesting, beautiful or surprising result
+- Within your local copy make some changes to the _styling-lists.html_ file, and/or add one or more new files within the *html_css* directory. Perhaps you can investigate until you find a change that has a useful, interesting, beautiful or surprising result. You can see the result of your change by opening the local file with a web browser
 - Commit and push your change to your forked repo (if you are using a feature branch you will have to name the branch explicitly with your push command)
 - [Make a pull request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request) (PR) from your update fork (and optionally branch) to the main branch of my repo
 
