@@ -32,7 +32,7 @@
       }
 
       ul li {
-        padding-left: 2rem;
+        padding-left: 1rem;
         background-image: url(star.svg);
         background-position: 0 0;
         background-size: 1.6rem 1.6rem;
@@ -58,6 +58,12 @@
       ul
       {
         list-style-type: square;
+      }
+
+      ul>li:hover
+      {
+        padding-left: 2rem;
+        transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.2s;
       }
 
     </style>
