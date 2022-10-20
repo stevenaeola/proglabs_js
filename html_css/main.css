@@ -60,7 +60,6 @@ html {
   .popup {
     width: 200px;
     height: 100px;
-    left: 40px;
     background-color: rgb(202, 199, 199);
     border-radius: 20px;
     border: 2px solid blue;
