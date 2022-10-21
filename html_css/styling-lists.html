@@ -12,6 +12,12 @@
         font-size: 10px;
       }
 
+      h1 {
+          font-family: Arial, Helvetica, sans-serif;
+          font-size: 40px;
+          text-decoration: underline;
+          text-align: center;
+      }
       h2 {
         font-size: 2rem;
       }
@@ -28,7 +34,7 @@
 
       ul {
         padding-left: 2rem;
-        list-style-type: none;
+        list-style-type: circle;
       }
 
       ul li {
@@ -43,6 +49,7 @@
 
       ol {
         list-style-type: upper-roman;
+        font-weight: bold;
       }
 
       /* Description list styles */
@@ -54,10 +61,15 @@
       dt {
         font-weight: bold;
       }
-
+     
+      li span {
+          font-weight: normal;
+      }
     </style>
   </head>
   <body>
+    <h1>Halloumi & Humous Pittas</h1>
+    <br />
     <h2>Shopping (unordered) list</h2>
 
     <p>Paragraph for reference, paragraph for reference, paragraph for reference, paragraph for reference, paragraph for reference, paragraph for reference.</p>
@@ -73,11 +85,11 @@
 
     <p>Paragraph for reference, paragraph for reference, paragraph for reference, paragraph for reference, paragraph for reference, paragraph for reference.</p>
 
-    <ol start="4">
-      <li>Toast pitta, leave to cool, then slice down the edge.</li>
-      <li>Fry the halloumi in a shallow, non-stick pan, until browned on both sides.</li>
-      <li>Wash and chop the salad.</li>
-      <li>Fill pitta with salad, humous, and fried halloumi.</li>
+    <ol start="1">
+      <li><span>Toast pitta, leave to cool, then slice down the edge.</span></li>
+      <li><span>Fry the halloumi in a shallow, non-stick pan, until browned on both sides.</span></li>
+      <li><span>Wash and chop the salad.</span></li>
+      <li><span>Fill pitta with salad, humous, and fried halloumi.</span></li>
     </ol>
 
     <h2>Ingredient description list</h2>
