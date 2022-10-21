@@ -1,0 +1,61 @@
+/* General styles */
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@500&display=swap');
+      
+* {
+  font-family: "Archivo Narrow", sans-serif;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  max-width: 75%;
+  margin-left: auto;
+}
+
+html {
+  font-size: 10px;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+ul,ol,dl,p {
+  font-size: 1.5rem;
+}
+
+li, p {
+  line-height: 1.5;
+}
+
+/* Unordered list styles */
+
+ul {
+  padding-left: 2rem;
+  list-style-type: none;
+}
+
+ul li {
+  padding-left: 2rem;
+  background-image: url(star.svg);
+  background-position: 0 0;
+  background-size: 1.6rem 1.6rem;
+  background-repeat: no-repeat;
+}
+
+/* Ordered list styles */
+
+ol {
+  list-style-type: upper-roman;
+}
+
+/* Description list styles */
+
+dd, dt {
+  line-height: 1.5;
+}
+
+dt {
+  font-weight: bold;
+}
