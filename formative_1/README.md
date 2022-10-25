@@ -23,7 +23,7 @@ This assignment is formative, so the assessment does not count towards the final
 
 4. The pages should use a consistent theme based on a web framework such as [Bootstrap](https://getbootstrap.com).
 
-5. Each page should be authored by one group member, with author details included, but written by somebody else. Include links to the author's github pages and linkedin profile where appropriate. The university has some [guidance on using linkedin](https://durham.careercentre.me/resources/elearning/hub.aspx?redirect=/e-learning/asset/view/1556).
+5. Each page should be authored by one group member, with author details included, but written by somebody else. Include links to the author's github pages and linkedin profile where appropriate. The university has some [guidance on using linkedin](https://durham.careercentre.me/clientcontent/qPAqQydbXP6021ueTw5wnw/files/Help%20Sheets/LinkedIn.docx).
 
 6. Once you have a good set of pages you can release them by pushing them to gitpages (see practical on [HTML and CSS](https://github.com/stevenaeola/proglabs_js/tree/main/html_css))
 
