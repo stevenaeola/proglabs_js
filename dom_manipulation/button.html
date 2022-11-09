@@ -6,11 +6,17 @@
     <button id='squeeze'>Squeeze me</button>
     
     <script>
-     let button = document.getElementById("squeeze");
-     function shout(){
-	     alert("... and I squeak");
-     }
-     button.addEventListener("click", shout);
+    let counter = 0;
+    document.getElementById("squeeze")
+      .addEventListener("click", (event) => {
+        setInterval(
+          () => {
+            event.target.style.webkitTransform = `rotate(${++counter}deg)`;
+          },
+          50,
+        );
+      }
+    );
     </script>
     </body>
 </html>
