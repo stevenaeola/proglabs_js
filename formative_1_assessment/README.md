@@ -32,7 +32,7 @@ Peer review is a crucial part of professional practice in software development. 
        - Balanced contributions from members
        - Not completed at the last minute
 
-   For each of these numbered headings you should rate it as one of the following, according to [the university marking and classification conventions](https://www.dur.ac.uk/resources/university.calendar/volumeii/2019.2020/coreregsug.pdf) (point 94), and add a comment:
+   For each of these numbered headings you should rate it as one of the following, according to [the university marking and classification conventions](https://www.dur.ac.uk/resources/university.calendar/volumeii/2022.2023/coreregsug.pdf) (point 94), and add a comment:
    
        - Perfect
        - Exemplary
