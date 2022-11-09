@@ -6,6 +6,8 @@
     <button id='squeeze'>Squeeze me</button>
     
     <script>
+     let button = document.getElementById("squeeze");
+     
         let counter = 0;
         let audio = null;
         function count() {
@@ -21,7 +23,6 @@
         }
         button.addEventListener("click", count);
 
-     let button = document.getElementById("squeeze");
      function shout(){
 	     alert("... and I squeak");
      }
