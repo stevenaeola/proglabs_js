@@ -9,7 +9,7 @@
 
 This assignment is formative, so the assessment does not count towards the final mark for the module.
 
-1. You will be assigned to a group of three or four by the demonstrators. 
+1. Make a group of three or four with other people in your practical session. If you need help to find group members ask the demonstrators. 
 
 2. Choose a way of collaborating with github:
 
@@ -23,7 +23,7 @@ This assignment is formative, so the assessment does not count towards the final
 
 4. The pages should use a consistent theme based on a web framework such as [Bootstrap](https://getbootstrap.com).
 
-5. Each page should be authored by one group member, with author details included, but written by somebody else. Include links to the author's github pages and linkedin profile where appropriate. The university has some [guidance on using linkedin](https://www.dur.ac.uk/careers/students/careerplanning/research/socialmedia/linkedin/).
+5. Each page should be authored by one group member, with author details included, but written by somebody else. Include links to the author's github pages and linkedin profile where appropriate. The university has some [guidance on using linkedin](https://durham.careercentre.me/clientcontent/qPAqQydbXP6021ueTw5wnw/files/Help%20Sheets/LinkedIn.docx).
 
 6. Once you have a good set of pages you can release them by pushing them to gitpages (see practical on [HTML and CSS](https://github.com/stevenaeola/proglabs_js/tree/main/html_css))
 
