@@ -4,7 +4,15 @@
 
     <body>
     <button id='squeeze'>Squeeze me</button>
-    
+    <button id="word-button">Click me</button>
+    <div id="word-button-content">
+    </div>
+
+    <textarea id="adjectives" placeholder=adjectives></textarea>
+    <textarea id="nouns" placeholder=nouns></textarea>
+    <textarea id="verbs" placeholder=verbs></textarea>
+    <textarea id="adverbs" placeholder=adverbs></textarea>
+
     <script>
     let counter = 0;
     document.getElementById("squeeze")
@@ -15,8 +23,121 @@
           },
           50,
         );
-      }
+      },
     );
+
+    const selectRandom = (element) => {
+        const length = element.length;
+        const index = Math.floor(Math.random() * length);
+        return element[index];
+    }
+
+    const lowercase = (f) => (...arguments) => f(...arguments).toLowerCase();
+
+    selectRandomTuple = (...arrays) => {
+        return arrays.map(lowercase(selectRandom));
+    }
+
+    const repeat = (n, f, ...arguments) => [...Array(n).keys()].map(() => f(...arguments));
+    const collect = (identifier, array) => [...document.getElementById(identifier).value.split("\n"), ...array];
+
+    const generateSentence = () => {
+        const [
+            adjective,
+            noun,
+            verb,
+            adverb
+        ] = selectRandomTuple(
+            collect("adjectives", adjectives),
+            collect("nouns", nouns),
+            collect("verbs", verbs),
+            collect("adverbs", adverbs)
+        );
+        return `The ${adjective} ${noun} ${verb} ${adverb}.`;
+    }
+
+    document
+      .getElementById("word-button")
+      .addEventListener(
+        "click", () => {
+            document.getElementById("word-button-content")
+              .innerText = repeat(3, generateSentence).join("\n");
+        },
+      );
+
+    </script>
+    <script>
+    /* Data */
+    const adverbs = [
+      "abnormally",
+      "absentmindedly",
+      "accidentally",
+      "actually",
+      "adventurously",
+      "afterwards",
+      "almost",
+      "always",
+      "annually",
+      "anxiously",
+      "arrogantly",
+      "awkwardly",
+    ]
+
+    const nouns = [
+      "Actor",
+      "Gold",
+      "Painting",
+      "Advertisement",
+      "Grass",
+      "Parrot",
+      "Afternoon",
+      "Greece",
+      "Pencil",
+      "Airport",
+      "Guitar",
+      "Piano",
+      "Ambulance",
+      "Hair",
+      "Pillow",
+      "Animal",
+      "Hamburger",
+      "Pizza",
+      "Answer",
+      "Helicopter",
+      "Planet",
+      "Apple",
+      "Helmet",
+      "Plastic",
+      "Army",
+      "Holiday",
+      "Portugal",
+      "Australia",
+      "Honey",
+      "Potato",
+    ];
+
+    const verbs = [
+      "Acts",
+      "Answers",
+      "Approves",
+      "Arranges",
+      "Breaks",
+      "Builds",
+      "Buys",
+      "Coaches",
+      "Colours",
+      "Creates",
+      "Completes",
+      "Cries",
+      "Dances",
+      "Describes",
+      "Draws",
+    ]
+
+    const adjectives = [
+        "red",
+        "fast",
+    ]
     </script>
     </body>
 </html>
