@@ -1,16 +1,34 @@
 <!DOCTYPE html>
 <html>
-    <head><title>JavaScript Button Example</title></head>
 
+    <head>
+        <title>JavaScript Button Example</title>
+
+        <style>
+        #btn {
+            position: absolute;
+            transition: .2s;
+            background-color: aquamarine;
+            padding: 3px;
+            height: 40px;
+            width: 150px;
+        }
+        </style>
+    </head>
     <body>
-    <button id='squeeze'>Squeeze me</button>
+        <button id="btn">Click me if you can</button>
     
-    <script>
-     let button = document.getElementById("squeeze");
-     function shout(){
-	     alert("... and I squeak");
-     }
-     button.addEventListener("click", shout);
-    </script>
+        <script>
+            const button = document.getElementById('btn');
+            button.addEventListener('mouseover', function () {
+                button.style.left = `${Math.ceil(Math.random() * 90)}%`;
+                button.style.top = `${Math.ceil(Math.random() * 90)}%`;
+            });
+            button.addEventListener('click', function () {
+            alert('congrats you clicked me')
+            })
+        </script>
+    
     </body>
 </html>
+
