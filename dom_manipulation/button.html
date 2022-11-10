@@ -7,12 +7,8 @@
     
     <script>
      let button = document.getElementById("squeeze");
-     let count=0;
-     let speed=20;
-     console.log(speed)
      function shout(){
 	     count+=1;
-	     speed+=10;
 	     if (count==1){
 	     	alert("ow")
 	     }
@@ -21,13 +17,8 @@
 	     }
 	     else {
 		alert("stop it")};
-	     console.log(speed)
      } 
-     function marq(){
-	     document.body.innerHTML = `<marquee behavior='scroll' scrollamount='${speed}' bgcolor='brown'>` + document.body.innerHTML + "</marquee>";
-     }
      button.addEventListener("click", shout);
-     button.addEventListener("click", marq);
     </script>
     </body>
 </html>
