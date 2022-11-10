@@ -1,16 +1,80 @@
 <!DOCTYPE html>
 <html>
-    <head><title>JavaScript Button Example</title></head>
+    <head>
+        <title>JavaScript Button Example</title>
+        <style>
+            button {
+                position: fixed;
+                top: 50%;
+                left: 50%;
+                z-index: 1;
+                transform: translate(-50%, -50%);
+            }
+
+            button.explode {
+                pointer-events: none;
+                opacity: 0;
+                transform: scale(20);
+                transition: transform 1s ease-out, opacity 1s linear;
+            }
+
+            div.explosion {
+                position: fixed;
+                width: 0;
+                height: 0;
+                top: 50%;
+                left: 50%;
+                pointer-events: none;
+                transform-origin: center center;
+                border-style: solid;
+                border-width: 0 100px 173.2px 100px;
+                border-color: transparent transparent var(--colour) transparent;
+                animation: grow_and_spin 0.8s linear forwards
+            }
+
+            @keyframes grow_and_spin {
+                0% {
+                    transform: translate(-50%, -50%) scale(0) rotate(calc(0deg + var(--offset)));
+                }
+                50% {
+                    transform: translate(-50%, -50%) scale(calc(1 * var(--size))) rotate(calc(90deg + var(--offset)));
+                }
+                100% {
+                    transform: translate(-50%, -50%) scale(0) rotate(calc(180deg + var(--offset)));
+                }
+            }
+        </style>
+    </head>
 
     <body>
     <button id='squeeze'>Squeeze me</button>
     
     <script>
-     let button = document.getElementById("squeeze");
-     function shout(){
-	     alert("... and I squeak");
-     }
-     button.addEventListener("click", shout);
+        let button = document.getElementById("squeeze");
+        function explode() {
+            let triangles = 0
+            button.classList.add('explode');
+            const interval = setInterval(() => {
+                if (triangles++ > 10)
+                    clearInterval(interval);
+
+                const hue = ~~(Math.random() * 60);
+                const saturation = 100;
+                const lightness = 50 + ~~(Math.random() * 25);
+
+                const size = ~~(Math.random() * 5);
+
+                const offset = ~~(Math.random() * 360);
+
+                const triangle = document.createElement('div');
+                triangle.setAttribute('style', `--colour: hsl(${hue}, ${saturation}%, ${lightness}%);--size: ${size};--offset: ${offset}deg;z-index: ${10 - size};`);
+                triangle.classList.add('explosion');
+                document.body.appendChild(triangle);
+
+                setTimeout(() => document.body.removeChild(triangle), 1000);
+            }, 100);
+        }
+        button.addEventListener("click", explode);
     </script>
     </body>
 </html>
