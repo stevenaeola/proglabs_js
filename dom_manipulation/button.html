@@ -1,16 +1,23 @@
 <!DOCTYPE html>
 <html>
     <head><title>JavaScript Button Example</title></head>
-
     <body>
-    <button id='squeeze'>Squeeze me</button>
-    
-    <script>
-     let button = document.getElementById("squeeze");
-     function shout(){
-	     alert("... and I squeak");
-     }
-     button.addEventListener("click", shout);
-    </script>
+      <div id="button-container">
+        <button id='squeeze'>Squeeze me</button>
+      </div>
+
+      <script>
+        let button = document.getElementById("squeeze");
+        button.addEventListener("click", () => {
+          for (let i = 0; i < 1000; i++) {
+            const new_p = document.createElement("p");
+            new_p.innerText = "And I squeak";
+            new_p.style.position = "absolute";
+            new_p.style.left = (Math.random() * innerWidth) + "px";
+            new_p.style.top = (Math.random() * innerHeight) + "px";
+            document.getElementById("button-container").appendChild(new_p);
+          }
+        });
+      </script>
     </body>
 </html>
