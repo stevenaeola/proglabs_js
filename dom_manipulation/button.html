@@ -9,17 +9,18 @@
      let button = document.getElementById("squeeze");
      let count=0;
      let speed=20;
+     function counter(){count+=1;
+		       speed+=10;}
      function shout(){
-	     count+=1;
-	     speed+=10;
 	     document.body.innerHTML = "<marquee behavior='slide' scrollamount='speed' bgcolor='brown'>" + document.body.innerHTML + "</marquee>";
-	     if count==1{
+	     if (count==1){
 	     	alert("ow")};
-	     else if count==2{
+	     else if (count==2){
      		alert("owie")};
 	     else {
 		alert("stop it")};
      }
+     button.addEventListener("click", counter);
      button.addEventListener("click", shout);
     </script>
     </body>
