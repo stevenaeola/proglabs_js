@@ -9,6 +9,7 @@
      let button = document.getElementById("squeeze");
      let count=0;
      let speed=20;
+     console.log(speed)
      function shout(){
 	     count+=1;
 	     speed+=10;
@@ -21,6 +22,7 @@
 	     }
 	     else {
 		alert("stop it")};
+	     console.log(speed)
      }
      button.addEventListener("click", shout);
     </script>
