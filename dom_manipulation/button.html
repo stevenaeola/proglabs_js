@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <head><title>JavaScript Button Example</title></head>
+
+    <body>
+    <button id='squeeze'>Squeeze me</button>
+    
+    <script>
+     let button = document.getElementById("squeeze");
+     function shout(){
+	     alert("... and I squeak");
+     }
+     button.addEventListener("click", shout);
+    </script>
+    </body>
+</html>
