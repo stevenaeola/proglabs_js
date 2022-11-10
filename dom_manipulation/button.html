@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head><title>JavaScript Button Example</title></head>
+
+    <body>
+
+    <button id='squeeze'>Squeeze me</button>
+    <p id='counter'>I have been pressed 0 times</p>
+
+
+
+    <script>
+     let button = document.getElementById("squeeze");
+     let counter = document.querySelector("#counter");
+     let pressed = 0;
+
+     function shout(){
+        pressed += 1;
+        counter.innerHTML = "I have been pressed " + pressed + " times";
+     }
+     button.addEventListener("click", shout);
+    </script>
+    </body>
+</html>
