@@ -1,16 +1,21 @@
 <!DOCTYPE html>
 <html>
-    <head><title>JavaScript Button Example</title></head>
-
-    <body>
+<head>
+    <title>nope</title>
+</head>
+<body>
+    <div id="nope_place"></div>
     <button id='squeeze'>Squeeze me</button>
-    
+
     <script>
-     let button = document.getElementById("squeeze");
-     function shout(){
-	     alert("... and I squeak");
-     }
-     button.addEventListener("click", shout);
+        let button = document.getElementById("squeeze");
+        function nope() {
+            var img = new Image();
+            img.src = "https://i.ytimg.com/vi/gvdf5n-zI14/maxresdefault.jpg"
+            nope_place.appendChild(img);
+        }
+        button.addEventListener("click", nope);
     </script>
-    </body>
+</body>
+
 </html>
