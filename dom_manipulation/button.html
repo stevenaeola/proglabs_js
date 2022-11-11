@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>JavaScript Button Example</title>
+    <style>
+    #squeeze {
+        position: absolute;
+        left:500px;
+        top:500px;
+    }
+    </style>
+    </head>
+
+    <body>
+    <button id='squeeze'>Squeeze me</button>
+    
+    <script>
+     let button = document.getElementById("squeeze");
+     function shout(){
+         const x = button.getBoundingClientRect();
+         newX = Math.floor(Math.random() * 500)
+         newY = Math.floor(Math.random() * 500)
+         button.setAttribute("style", "top:" + newX + "px;left:" + newY + "px");
+         const colours = ["red", "blue", "green", "yellow", "lightblue", "purple", "pink", "orange"];
+         const randomColour = colours[Math.floor(Math.random() * colours.length)];
+	     button.style.backgroundColor = randomColour;
+     }
+     button.addEventListener("mouseover", shout);
+    </script>
+    </body>
+</html>
+
