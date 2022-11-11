@@ -4,10 +4,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="pasta_site_style.css">
-    <title>Styling lists</title>
+    <title>Recipes</title>
     
   </head>
   <body>
+
+    <div class="textArea">
     <h2>Shopping (unordered) list</h2>
 
     <p>Paragraph for reference, paragraph for reference, paragraph for reference, paragraph for reference, paragraph for reference, paragraph for reference.</p>
@@ -24,7 +26,7 @@
     <p>Paragraph for reference, paragraph for reference, paragraph for reference, paragraph for reference, paragraph for reference, paragraph for reference.</p>
 
     <ol start="4">
-      <li>Toast pitta, leave to cool, then slice down the edge.</li>
+      <li id="toastPitta">Toast pitta, leave to cool, then slice down the edge.</li>
       <li>Fry the halloumi in a shallow, non-stick pan, until browned on both sides.</li>
       <li>Wash and chop the salad.</li>
       <li>Fill pitta with salad, humous, and fried halloumi.</li>
@@ -46,21 +48,21 @@
     </dl>
 
     <h2>Add a recipe?..</h2>
-    <form action="/my-handling-form-page" method="post" class="wrapper">
+    <form action="styling-lists.html" method="post" class="wrapper">
       <ul>
         <li>
-          <label for="name" class="name_txt">Name:</label>
+          <label for="name" id="name_txt">Name:</label>
           <input type="text" id="name" name="user_name">
         </li>
         <li>
-          <label for="mail">E-mail</label>
+          <label for="mail" id="email">E-mail</label>
           <input type="email" id="mail" name="user_email">
         </li>
 
-        <textarea>here is a text area</textarea>
-        <button type="submit">Send your message</button>
+        <button type="submit" id="submitButton" onclick="onEnterOfForm()">Send your message</button>
       </ul>      
     </form>
 
+  </div>
   </body>
 </html>
