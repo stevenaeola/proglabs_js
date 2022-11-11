@@ -6,9 +6,11 @@
     <button id='squeeze'>Squeeze me</button>
     
     <script>
+     let squeak = new Audio('squeak.mp3');
      let button = document.getElementById("squeeze");
      function shout(){
 	     alert("... and I squeak");
+         squeak.play()
      }
      button.addEventListener("click", shout);
     </script>
