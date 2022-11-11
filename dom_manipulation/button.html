@@ -4,13 +4,16 @@
 
     <body>
     <button id='squeeze'>Squeeze me</button>
-    
     <script>
-     let button = document.getElementById("squeeze");
-     function shout(){
-	     alert("... and I squeak");
-     }
-     button.addEventListener("click", shout);
+        let button = document.getElementById("squeeze");
+        function shout(){
+             alert("... and I squeak");
+        }
+        function ow() { 
+            document.getElementById("owwww").innerHTML = "ow";
+        }
+        button.addEventListener("click", ow);
     </script>
+    <p id='owwww'>hey</p>
     </body>
 </html>
