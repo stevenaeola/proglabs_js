@@ -32,7 +32,8 @@
 
      function shout(){
 	     alert("... and I chimp");
-         let pic = document.createElement("img").src = "EmptyChimp.jpg"
+         let pic = document.createElement("img");
+         pic.src = "https://upload.wikimedia.org/wikipedia/commons/6/6c/Chimpanzee_%2814679767561%29.jpg";
          for (const radioButton of radioButtons)
          {
             if (radioButton.checked)
@@ -40,16 +41,16 @@
                 switch (radioButton.value)
                 {
                     case "Happy":
-                        pic = document.createElement("img").src = "HappyChimp.jpg";
+                        pic.src = "https://upload.wikimedia.org/wikipedia/commons/d/d8/Chimp_portrait_%285312048385%29.jpg";
                         break;
                     case "Sad":
-                        pic = document.createElement("img").src = "SadChimp.jpg";
+                        pic.src = "https://upload.wikimedia.org/wikipedia/commons/7/7c/Chimpanzee%2C_Ol_Pejeta_Conservancy%2C_Kenya_%2832450419367%29.jpg";
                         break;
                     case "Sleepy":
-                        pic = document.createElement("img").src = "YawnChimp.jpg";
+                        pic.src = "https://upload.wikimedia.org/wikipedia/commons/c/cf/Chimp_yawn_-_Flickr_-_Carine06.jpg";
                         break;
                     case "Small":
-                        pic = document.createElement("img").src = "LittleChimp.jpg";
+                        pic.src = "https://upload.wikimedia.org/wikipedia/commons/3/31/Chimpanzee_VII_%2813945324101%29.jpg";
                         break;
 
                 }
