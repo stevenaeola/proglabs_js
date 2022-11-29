@@ -75,9 +75,7 @@ window.addEventListener('click', function(event){
    wherever it likes. You can use the [node-fetch
    package](https://www.npmjs.com/package/node-fetch) to use the same
    style of coding in your server as you have just learnt to do in the
-   client. This is an alternative to using the
-   [request](https://www.npmjs.com/package/request) package mentioned
-   in the [previous practical][]. 
+   client. 
    
    [lecture]: https://github.com/stevenaeola/progblack_lectures/tree/main/js_fetch
 [previous practical]: https://github.com/stevenaeola/proglabs_js/tree/main/node_routing/
