@@ -5,11 +5,28 @@
     <meta name="viewport" content="width=device-width">
     <title>Styling lists</title>
     <style>
+      /* Variables */
+
+      :root {
+        /* Primary fg and bg colours */
+        --bg-color-0: #ddd;
+        --fg-color-0: #000;
+      }
+
+      :root.dark {
+        /* Primary fg and bg colours */
+        --fg-color-0: #d8d8e0;
+        --bg-color-0: #222;
+      }
+
       /* General styles */
 
       html {
+        background-color: var(--bg-color-0);
+        color: var(--fg-color-0);
         font-family: Helvetica, Arial, sans-serif;
         font-size: 10px;
+        transition: background-color 0.5s, color 0.5s;
       }
 
       h2 {
@@ -55,9 +72,61 @@
         font-weight: bold;
       }
 
+      /* Dark mode selector */
+
+      #dm-selector {
+        position: absolute;
+        top: 10px; right: 10px;
+        font-size: 3rem;
+        cursor: pointer;
+      }
+
     </style>
+
+    <script>
+      // Is darkmode currently on?
+      darkMode = false
+
+      // Set the theme; dark = true if dark mode
+      function setTheme(dark) {
+        if (dark) {
+          document.lastChild.classList.add('dark');
+          console.log("Putting sunglasses on 😎");
+        } else {
+          document.lastChild.classList.remove('dark');
+          console.log("Taking sunglasses off 🙂");
+        }
+      }
+
+      // Run when the dark mode selector is clicked
+      function dm_click(ev) {
+        darkMode = !darkMode;
+        ev.target.innerText = darkMode ? "🌕": "🌑";
+        setTheme(darkMode);
+      }
+
+      // Run immediatly
+      // The html element (document.lastChild) should have loaded already,
+      //   so this will work
+      darkMode = window.matchMedia("(prefers-color-scheme: dark)").matches;
+      if (darkMode) {
+        setTheme(darkMode);
+      }
+
+      // Run on document load
+      function onLoad() {
+        dm_selector = document.getElementById("dm-selector");
+
+        if (darkMode)
+          dm_selector.innerText = "🌕";
+        dm_selector.addEventListener("click", dm_click);
+      }
+
+      window.addEventListener("load", onLoad);
+    </script>
   </head>
   <body>
+    <span id="dm-selector">🌑</span>
     <h2>Shopping (unordered) list</h2>
 
     <p>Paragraph for reference, paragraph for reference, paragraph for reference, paragraph for reference, paragraph for reference, paragraph for reference.</p>
