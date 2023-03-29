@@ -9,26 +9,26 @@
     <!-- Bootstrap -->
     <link rel=stylesheet href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"></script>
-    <script src="./styling-lists.js"></script>
   </head>
   <body>
+
+    <h2>Pasta</h2>
     <div class=containerised>
       <div class="pos-f-t">
-        <div id="navbar-content">
-          <div class="navbar-content-inner">
-              <a href="">Home</a>
-              <a href="">About</a>
+        <div class="collapse" id="navbarToggleExternalContent">
+          <div>
+            <h4 class="text-white">Collapsed content</h4>
+            <span class="text-muted">Toggleable via the navbar brand.</span>
           </div>
         </div>
-        <nav class="navbar">
-          <button id="navbar-button" class="navbar-toggler">
+        <nav class="navbar navbar-dark">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
           </button>
         </nav>
       </div>
     </div>
 
-    <h2>Shopping (unordered) list</h2>
 
     <p>Paragraph for reference, paragraph for reference, paragraph for reference, paragraph for reference, paragraph for reference, paragraph for reference.</p>
 
