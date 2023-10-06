@@ -31,6 +31,6 @@ history with tools like github.
    username that doesn't identify you_ for privacy's sake. (You don't
    need to wait for registration to complete before starting the tutorial.)
 
-3. Using the command line (Terminal in OSX, command prompt or git bash on Windows), 
+3. Using the command line (Terminal in OSX or Linux, command prompt or git bash on Windows), 
  complete the [Software Carpentry git tutorial](http://swcarpentry.github.io/git-novice/) apart from section 14 Supplemental: Using Git from RStudio. If you want to develop your command line skills then (another time) try [UNIX/Linux shell
-   tutorial](https://github.com/stevenaeola/proglabs_js/tree/main/shell))
+   tutorial](https://github.com/stevenaeola/proglabs_js/tree/main/shell)
