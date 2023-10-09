@@ -34,3 +34,5 @@ history with tools like github.
 3. Using the command line (Terminal in OSX or Linux, command prompt or git bash on Windows), 
  complete the [Software Carpentry git tutorial](http://swcarpentry.github.io/git-novice/) apart from section 14 Supplemental: Using Git from RStudio. If you want to develop your command line skills then (another time) try [UNIX/Linux shell
    tutorial](https://github.com/stevenaeola/proglabs_js/tree/main/shell)
+
+4. If you finish the other tasks you might like to understand more about how git works by reading [git from the bottom up](https://jwiegley.github.io/git-from-the-bottom-up/).
