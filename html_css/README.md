@@ -24,7 +24,7 @@ If you would rather work with somebody else to do this, that is fine.
 
 Now that you have some familiarity with HTML and CSS, have a look at the file _styling-lists.html_ which comes from the [MDN tutorial](https://mdn.github.io/learning-area/css/styling-text/styling-lists/unstyled-list.html). 
 
-- First, fork this repository <https://github.com/stevenaeola/proglabs_js> on github and clone it to your local machine. [Set the upstream remote](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/configuring-a-remote-for-a-fork) to be my original repository
+- First, fork this repository <https://github.com/stevenaeola/proglabs_js> on github and clone your forked version to your local machine. [Set the upstream remote](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/configuring-a-remote-for-a-fork) to be my original repository
 - Within your local copy make some changes to the _styling-lists.html_ file, and/or add one or more new files within the *html_css* directory. Perhaps you can investigate until you find a change that has a useful, interesting, beautiful or surprising result. You can see the result of your change by opening the local file with a web browser
 - Commit and push your change to your forked repo
 - [Make a pull request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request) (PR) from your update fork to the main branch of my repo
@@ -81,7 +81,7 @@ In either case you will need to `git commit` your changes and `git push` them to
   
 ### Use a framework
 
-  Make a copy of your HTML page and change it so that it uses either [bootstrap](http://getbootstrap.com/) or [an alternative](https://classpert.com/blog/top-bootstrap-alternatives). If you've used one of them before then try another one. You should have to change very little of the HTML content, only the CSS classes referred to. Use templates that are provided in the documentation where relevant.
+  Make a copy of your HTML page and change it so that it uses either [bootstrap](http://getbootstrap.com/) or [an alternative](https://www.creative-tim.com/blog/educational-tech/bootstrap-alternatives/). If you've used one of them before then try another one. You should have to change very little of the HTML content, only the CSS classes referred to. Use templates that are provided in the documentation where relevant.
 
 ### Make it mobile-friendly
 
