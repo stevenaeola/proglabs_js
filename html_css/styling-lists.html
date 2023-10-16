@@ -55,6 +55,26 @@
         font-weight: bold;
       }
 
+      /* Extra Styles */
+      blockquote {
+        font-size: 14px;
+      }
+
+      button {
+        background-color: white;
+        color: black;
+        transition-duration: 0.5s;
+        padding: 5px;
+        padding-left: 5px;
+        padding-right: 5px;
+        border-radius: 5px;
+      }
+
+      button:hover {
+        background-color: grey;
+        color: white;
+      }
+
     </style>
   </head>
   <body>
@@ -94,7 +114,19 @@
       <dt>Green salad</dt>
       <dd>That green healthy stuff that many of us just use to garnish kebabs.</dd>
     </dl>
+    
+    <h2>Quote from Instructions for this task</h2>
 
+    <p>Paragraph for reference, paragraph for reference, paragraph for reference, paragraph for reference, paragraph for reference, paragraph for reference.</p>
+
+    <blockquote cite="https://github.com/stevenaeola/proglabs_js/blob/main/html_css/README.md">
+      Now that you have some familiarity with HTML and CSS, have a look at the file styling-lists.html which comes from the MDN tutorial. <br>
+      First, fork this repository https://github.com/stevenaeola/proglabs_js on github and clone your forked version to your local machine. Set the upstream remote to be my original repository <br>
+      Within your local copy make some changes to the styling-lists.html file, and/or add one or more new files within the html_css directory. Perhaps you can investigate until you find a change that has a useful, interesting, beautiful or surprising result. You can see the result of your change by opening the local file with a web browser <br>
+      Commit and push your change to your forked repo <br>
+      Make a pull request (PR) from your update fork to the main branch of my repo</blockquote>
+    
+    <a href="https://github.com/stevenaeola/proglabs_js/blob/main/html_css/README.md"><button type = "button">Read more about this task</button></a>
 
   </body>
 </html>
