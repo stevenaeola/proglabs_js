@@ -17,33 +17,43 @@ li, p {
     line-height: 1.5;
 }
 
-/* Unordered list styles */
+/* Styling for individual sections */
+#Shopping_list {
+    background-color: darkcyan;
 
-ul {
-    padding-left: 2rem;
-    list-style-type: none;
+    /* Nested unordered list styles */
+    & ul {
+        padding-left: 2rem;
+        list-style-type: none;
+    }
+
+    & ul li {
+        padding-left: 2rem;
+        background-image: url(star.svg);
+        background-position: 0 0;
+        background-size: 1.6rem 1.6rem;
+        background-repeat: no-repeat;
+    }
 }
 
-ul li {
-    padding-left: 2rem;
-    background-image: url(star.svg);
-    background-position: 0 0;
-    background-size: 1.6rem 1.6rem;
-    background-repeat: no-repeat;
+#Recipe_list {
+    background-color: cadetblue;
+    /* Nested ordered list styles */
+    & ol {
+        list-style-type: upper-roman;
+    }
+    
+
 }
 
-/* Ordered list styles */
+#Ingredient_description_list {
+    background-color: cornflowerblue;
+    /* Nested description list styles */
+    & dd, dt {
+        line-height: 1.5;
+    }
 
-ol {
-    list-style-type: upper-roman;
-}
-
-/* Description list styles */
-
-dd, dt {
-    line-height: 1.5;
-}
-
-dt {
-    font-weight: bold;
+    & dt {
+        font-weight: bold;
+    }
 }
