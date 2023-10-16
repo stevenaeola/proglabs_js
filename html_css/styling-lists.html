@@ -55,6 +55,37 @@
         font-weight: bold;
       }
 
+      .btn {
+    display: flex; /* Use Flexbox */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    width: 200px; /* Increased width */
+    height: 200px; /* Increased height */
+    border-radius: 15px;
+    background-color: #ffffff;
+    color: #ffffff;
+    text-align: center;
+    margin: 10px;
+    font-size: 16px;
+    text-decoration: none;
+    transition: 0.3s;
+    }
+
+    .btn:hover {
+        background-color: #ffffff;
+    }
+
+    .buttons-container {
+        display: flex; /* Use Flexbox */
+        flex-wrap: wrap; /* Allow buttons to wrap to the next line */
+        justify-content: center; /* Center buttons horizontally */
+        width: 100%;
+        max-width: 440px; /* Adjusted based on increased button size and margin */
+        margin: 0 auto;
+        border-spacing: 20px;
+    }
+
+
     </style>
   </head>
   <body>
@@ -81,6 +112,20 @@
     </ol>
 
     <h2>Ingredient description list</h2>
+    
+    <table class="buttons-container">
+      <tr>
+          <td>
+              <a href="red-button.html" class="btn">
+                  <span>
+                      <img src="images/Red_button.png" style="opacity: 0.9" alt="Red Button" height="150" width="150">
+                  </span>
+              </a>
+          </td>
+      </tr>
+    </table>
+
+
 
     <p>Paragraph for reference, paragraph for reference, paragraph for reference, paragraph for reference, paragraph for reference, paragraph for reference.</p>
 
