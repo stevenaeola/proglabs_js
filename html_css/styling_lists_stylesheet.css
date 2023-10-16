@@ -17,9 +17,13 @@ li, p {
     line-height: 1.5;
 }
 
+body {
+    background-color: antiquewhite;
+}
+
 /* Styling for individual sections */
 #Shopping_list {
-    background-color: darkcyan;
+    color: darkcyan;
 
     /* Nested unordered list styles */
     & ul {
@@ -37,7 +41,7 @@ li, p {
 }
 
 #Recipe_list {
-    background-color: cadetblue;
+    color: cadetblue;
     /* Nested ordered list styles */
     & ol {
         list-style-type: upper-roman;
@@ -47,7 +51,7 @@ li, p {
 }
 
 #Ingredient_description_list {
-    background-color: cornflowerblue;
+    color: cornflowerblue;
     /* Nested description list styles */
     & dd, dt {
         line-height: 1.5;
