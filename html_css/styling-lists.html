@@ -1,26 +1,31 @@
 <!DOCTYPE html>
 <html lang="en-us">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
     <title>Styling lists</title>
     <style>
       /* General styles */
 
       html {
         font-family: Helvetica, Arial, sans-serif;
-        font-size: 10px;
+        font-size: 5px;
       }
 
       h2 {
-        font-size: 2rem;
+        font-size: 20rem;
+        color: red;
       }
 
-      ul,ol,dl,p {
+      ul,
+      ol,
+      dl,
+      p {
         font-size: 1.5rem;
       }
 
-      li, p {
+      li,
+      p {
         line-height: 1.5;
       }
 
@@ -47,54 +52,76 @@
 
       /* Description list styles */
 
-      dd, dt {
+      dd,
+      dt {
         line-height: 1.5;
       }
 
       dt {
         font-weight: bold;
       }
-
+      li {
+        color: green;
+      }
     </style>
   </head>
   <body>
     <h2>Shopping (unordered) list</h2>
 
-    <p>Paragraph for reference, paragraph for reference, paragraph for reference, paragraph for reference, paragraph for reference, paragraph for reference.</p>
+    <p>
+      Paragraph for reference, paragraph for reference, paragraph for reference,
+      paragraph for reference, paragraph for reference, paragraph for reference.
+    </p>
 
     <ul>
       <li>Humous</li>
       <li>Pitta</li>
       <li>Green salad</li>
       <li>Halloumi</li>
+      <li>Cheese</li>
     </ul>
 
     <h2>Recipe (ordered) list</h2>
 
-    <p>Paragraph for reference, paragraph for reference, paragraph for reference, paragraph for reference, paragraph for reference, paragraph for reference.</p>
+    <p>
+      Paragraph for reference, paragraph for reference, paragraph for reference,
+      paragraph for reference, paragraph for reference, paragraph for reference.
+    </p>
 
-    <ol start="4">
+    <ol start="1">
       <li>Toast pitta, leave to cool, then slice down the edge.</li>
-      <li>Fry the halloumi in a shallow, non-stick pan, until browned on both sides.</li>
+      <li>
+        Fry the halloumi in a shallow, non-stick pan, until browned on both
+        sides.
+      </li>
       <li>Wash and chop the salad.</li>
       <li>Fill pitta with salad, humous, and fried halloumi.</li>
     </ol>
 
     <h2>Ingredient description list</h2>
 
-    <p>Paragraph for reference, paragraph for reference, paragraph for reference, paragraph for reference, paragraph for reference, paragraph for reference.</p>
+    <p>
+      Paragraph for reference, paragraph for reference, paragraph for reference,
+      paragraph for reference, paragraph for reference, paragraph for reference.
+    </p>
 
     <dl>
       <dt>Humous</dt>
-      <dd>A thick dip/sauce generally made from chick peas blended with tahini, lemon juice, salt, garlic, and other ingredients.</dd>
+      <dd>
+        A thick dip/sauce generally made from chick peas blended with tahini,
+        lemon juice, salt, garlic, and other ingredients.
+      </dd>
       <dt>Pitta</dt>
       <dd>A soft, slightly leavened flatbread.</dd>
       <dt>Halloumi</dt>
-      <dd>A semi-hard, unripened, brined cheese with a higher-than-usual melting point, usually made from goat/sheep milk.</dd>
+      <dd>
+        A semi-hard, unripened, brined cheese with a higher-than-usual melting
+        point, usually made from goat/sheep milk.
+      </dd>
       <dt>Green salad</dt>
-      <dd>That green healthy stuff that many of us just use to garnish kebabs.</dd>
+      <dd>
+        That green healthy stuff that many of us just use to garnish kebabs.
+      </dd>
     </dl>
-
-
   </body>
 </html>
