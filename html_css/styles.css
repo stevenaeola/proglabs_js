@@ -1,0 +1,91 @@
+/* General styles */
+
+html {
+	font-family: "EB Garamond";
+	font-size: 20px;
+
+}
+
+body {
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	background-color: #fffff0;
+	overflow: visible;
+	padding-top: 6rem;
+	padding-bottom: 10rem;
+}
+
+main#content-container {
+	margin-top: 10rem;
+	margin-bottom: 10rem;
+	width: auto;
+	height: auto;
+}
+
+main#content-container > h1:first-child {
+	font-size: 5rem;
+	text-align: center;
+}
+
+h2 {
+	font-size: 2rem;
+}
+
+ul,ol,dl,p {
+	font-size: 1.5rem;
+}
+
+li, p {
+	line-height: 1.5;
+}
+
+/* Unordered list styles */
+
+ul {
+	padding-left: 2rem;
+	list-style-type: none;
+}
+
+ul li {
+	padding-left: 2rem;
+	background-image: url(star.svg);
+	background-position: 0 0;
+	background-size: 1.6rem 1.6rem;
+	background-repeat: no-repeat;
+}
+
+/* Ordered list styles */
+
+ol {
+	list-style-type: upper-roman;
+}
+
+/* Description list styles */
+
+dd, dt {
+	line-height: 1.5;
+}
+
+dt {
+	font-weight: bold;
+	font-variation-settings: "wght" 950;
+}
+
+dl#recipe-description {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+dl#recipe-description > span {
+	margin-bottom: 1rem;
+}
+
+@font-face {
+  font-family: "EB Garamond";
+  src: url("./fonts/EBGaramond-VariableFont_wght.ttf")
+}
