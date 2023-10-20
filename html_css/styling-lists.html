@@ -3,62 +3,17 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="styles.css">
     <title>Styling lists</title>
-    <style>
-      /* General styles */
-
-      html {
-        font-family: Helvetica, Arial, sans-serif;
-        font-size: 10px;
-      }
-
-      h2 {
-        font-size: 2rem;
-      }
-
-      ul,ol,dl,p {
-        font-size: 1.5rem;
-      }
-
-      li, p {
-        line-height: 1.5;
-      }
-
-      /* Unordered list styles */
-
-      ul {
-        padding-left: 2rem;
-        list-style-type: none;
-      }
-
-      ul li {
-        padding-left: 2rem;
-        background-image: url(star.svg);
-        background-position: 0 0;
-        background-size: 1.6rem 1.6rem;
-        background-repeat: no-repeat;
-      }
-
-      /* Ordered list styles */
-
-      ol {
-        list-style-type: upper-roman;
-      }
-
-      /* Description list styles */
-
-      dd, dt {
-        line-height: 1.5;
-      }
-
-      dt {
-        font-weight: bold;
-      }
-
-    </style>
   </head>
   <body>
-    <h2>Shopping (unordered) list</h2>
+    <header>
+      <h2>Shopping (unordered) list</h2>
+      <div id="darkModeToggleDiv">
+          <input type="checkbox" class="darkModeToggle" id="darkModeToggleBox">
+          <label for="darkModeToggleBox" class="darkModeToggle">Dark Mode</label>
+      </div>
+    </header>
 
     <p>Paragraph for reference, paragraph for reference, paragraph for reference, paragraph for reference, paragraph for reference, paragraph for reference.</p>
 
@@ -95,6 +50,29 @@
       <dd>That green healthy stuff that many of us just use to garnish kebabs.</dd>
     </dl>
 
+    <script>
+      const darkModeToggleBox = document.getElementById('darkModeToggleBox');
+      const body = document.body;
+
+      // Check for saved dark mode preference, if any.
+      // If not, default to light mode.
+      const savedTheme = localStorage.getItem('dark-mode-storage') || 'light';
+      if (savedTheme === 'dark') {
+          body.classList.add('dark-mode');
+          darkModeToggleBox.checked = true;
+      }
+
+      // Toggle dark mode on checkbox click.
+      darkModeToggleBox.addEventListener('change', () => {
+          if (darkModeToggleBox.checked) {
+              body.classList.add('dark-mode');
+              localStorage.setItem('dark-mode-storage', 'dark');
+          } else {
+              body.classList.remove('dark-mode');
+              localStorage.setItem('dark-mode-storage', 'light');
+          }
+      });
+    </script>
 
   </body>
 </html>
