@@ -14,13 +14,13 @@
 ```
 git pull upstream main
 ```
-Now make a change to the file that has a useful, interesting, beautiful or surprising result. Ideally this would be in its own issue branch. Commit and push your change to your forked repository, then make a pull request to the original repo. Add a PeerWise question about the effect of your change. Answer some questions other people have written too.
+Now make a change to the file that has a useful, interesting, beautiful or surprising result. Commit and push your change to your forked repository, then make a pull request to the original repo. Add a PeerWise question about the effect of your change. Answer some questions other people have written too.
 
 3. Write an HTML page with associated client-side JavaScript to generate a random sentence in English (or another language if you prefer). The sentence should take the form
 
   > The _adjective_ _noun_ _verb_ _adverb_.
 
-  or the equivalent structure in the language you choose. Here _adjective_ should be randomly selected from a list of adjectives (e.g. blue, tall, furry) that you define in your JavaScript code. You should also define a list of nouns, verbs and adverbs to choose from. If you want help choosing some words you could look at <https://www.wordsapi.com/> or <https://randomwordgenerator.com/>. An example generated sentence would be
+  or the equivalent structure in the language you choose. Here _adjective_ should be randomly selected from a list of adjectives (e.g. blue, tall, furry) that you define in your JavaScript code. You should also define a list of nouns, verbs and adverbs to choose from. If you want help choosing some words you could look at <https://www.getrandomthings.com/random-verbs.php> or other similar sites. An example generated sentence would be
 
   > The blue dog eats lazily.
 
