@@ -1,16 +1,26 @@
 <!DOCTYPE html>
 <html>
     <head><title>JavaScript Button Example</title></head>
-
+    <style>
+        .myButton {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 5%;
+            font-size: 1500%
+        }
+    </style>
     <body>
-    <button id='squeeze'>Squeeze me</button>
+    <button id='squeeze' class="myButton">Squeeze Me</button>
     
     <script>
-     let button = document.getElementById("squeeze");
-     function shout(){
-	     alert("... and I squeak");
-     }
-     button.addEventListener("click", shout);
+        "use strict";
+        let button = document.getElementById("squeeze");
+        button.addEventListener("click", () => {
+            alert("... and I change colours");
+            button.style.backgroundColor = "#" + Math.floor(Math.random() * 16777215).toString(16)
+        });
     </script>
     </body>
 </html>
