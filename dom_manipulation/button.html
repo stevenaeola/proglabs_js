@@ -1,16 +1,27 @@
 <!DOCTYPE html>
-<html>
-    <head><title>JavaScript Button Example</title></head>
+<html lang="en">
 
-    <body>
-    <button id='squeeze'>Squeeze me</button>
-    
-    <script>
-     let button = document.getElementById("squeeze");
-     function shout(){
-	     alert("... and I squeak");
-     }
-     button.addEventListener("click", shout);
-    </script>
-    </body>
+<head>
+	<title>JavaScript Button Example</title>
+</head>
+
+<body>
+	<div id="buttons">
+		<button id="original">I have friends</button>
+	</div>
+
+	<script>
+		function duplicate()
+		{
+			var newButton = document.createElement("button")
+			newButton.innerHTML = "Hello!"
+			document.getElementById("buttons").appendChild(newButton)
+		}
+
+		// Add listener to original button
+		let button = document.getElementById("original");
+		button.addEventListener("click", duplicate);
+	</script>
+</body>
+
 </html>
