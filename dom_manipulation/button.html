@@ -2,15 +2,41 @@
 <html>
     <head><title>JavaScript Button Example</title></head>
 
-    <body>
+    <body id="body">
     <button id='squeeze'>Squeeze me</button>
     
     <script>
      let button = document.getElementById("squeeze");
-     function shout(){
-	     alert("... and I squeak");
+     
+     
+
+
+     function getRandomInt(max) {
+        return Math.floor(Math.random() * max);
+    }
+
+     function changeColour(){
+
+
+
+        var r = getRandomInt(255);
+        var g = getRandomInt(255);
+        var b = getRandomInt(255);
+
+	    console.log(r, g, b, "test");
+
+        document.body.style.backgroundColor = 'rgb('+[r,g,b].join(',')+')';
+
+        
      }
-     button.addEventListener("click", shout);
+
+     button.addEventListener("click", changeColour);
+
+     
+
+
     </script>
+
+    
     </body>
 </html>
