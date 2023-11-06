@@ -6,11 +6,12 @@
     <button id='squeeze'>Squeeze me</button>
     
     <script>
-     let button = document.getElementById("squeeze");
-     function shout(){
-	     alert("... and I squeak");
-     }
-     button.addEventListener("click", shout);
+        let button = document.getElementById("squeeze");
+        function shout(){
+            let elapsed = Math.round(performance.now() / 1000); // ms to seconds
+	        alert(`It took you ${elapsed} seconds to press this button ... \n... and I squeak`);
+        }
+        button.addEventListener("click", shout);
     </script>
     </body>
 </html>
