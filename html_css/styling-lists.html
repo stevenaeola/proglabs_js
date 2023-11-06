@@ -12,6 +12,21 @@
         font-size: 10px;
       }
 
+      dl {
+        list-style-type: none; /* Remove default list style */
+        padding-left: 0; /* Remove default padding */
+      }
+
+      dt::before {
+        content: '\2022'; /* Unicode character for bullet point */
+        font-size: 1.5em; /* Adjust size if needed */
+        margin-right: 0.5em; /* Adjust spacing if needed */
+      }
+
+      dd {
+        margin-left: 1.5em; /* Adjust indentation of descriptions */
+      }
+
       h2 {
         font-size: 2rem;
       }
