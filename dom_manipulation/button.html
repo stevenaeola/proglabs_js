@@ -8,10 +8,9 @@
     
     <script>
      let button = document.getElementById("squeeze");
-     function shout(event){
+     function shout(){
 	     alert("... and I squeak");
          const message = document.getElementById("heading")
-         console.log()
          message.innerHTML = message.textContent.toUpperCase()
      }
      button.addEventListener("click", shout);
