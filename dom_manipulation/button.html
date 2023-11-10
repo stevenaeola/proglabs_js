@@ -1,14 +1,20 @@
 <!DOCTYPE html>
 <html>
-    <head><title>JavaScript Button Example</title></head>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+        <title>
+            JavaScript Button Example
+        </title>
+    </head>
 
     <body>
-    <button id='squeeze'>Squeeze me</button>
+    <button class="buttons" id='squeeze'>Squeeze me</button>
     
     <script>
      let button = document.getElementById("squeeze");
      function shout(){
-	     alert("... and I squeak");
+         button.style.left = Math.random()*80+"vw";
+         button.style.top = Math.random()*80+"vh";
      }
      button.addEventListener("click", shout);
     </script>
