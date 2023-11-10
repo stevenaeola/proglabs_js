@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <title>Styling lists</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
     <style>
       /* General styles */
 
@@ -53,6 +54,28 @@
 
       dt {
         font-weight: bold;
+      }
+
+      @keyframes fadeIn {
+        0% {
+          color: #222;
+        }
+        100% {
+          color: #ddd;
+        }
+      }
+
+      body {
+        animation: fadeIn 2s;
+        margin: 0 auto;
+        padding: 10em 0;
+        max-width: 700px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        background-color: #222;
+        color: #ddd;
+        font-family: 'Open Sans';
       }
 
     </style>
