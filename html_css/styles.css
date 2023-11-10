@@ -1,0 +1,73 @@
+/* General styles */
+
+html {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 10px;
+}
+
+body {
+	animation: rainbow 1s infinite;
+}
+
+h2 {
+	font-size: 2rem;
+}
+
+ul,ol,dl,p {
+	font-size: 1.5rem;
+}
+
+li, p {
+	line-height: 1.5;
+}
+
+/* Unordered list styles */
+
+ul {
+	padding-left: 2rem;
+	list-style-type: none;
+}
+
+ul li {
+	padding-left: 2rem;
+	background-image: url(star.svg);
+	background-position: 0 0;
+	background-size: 1.6rem 1.6rem;
+	background-repeat: no-repeat;
+}
+
+/* Ordered list styles */
+
+ol {
+	list-style-type: upper-roman;
+}
+
+/* Description list styles */
+
+dd, dt {
+	line-height: 1.5;
+}
+
+dt {
+	font-weight: bold;
+}
+
+/* Hover Effects */
+#shopping-list:hover {
+	outline: 5px dashed black;
+}
+
+#recipe:hover {
+	outline: 5px dashed black;
+}
+
+#ingredient-description:hover {
+	outline: 5px dashed black;
+}
+
+/* Keyframes */
+@keyframes rainbow {
+	0% { color: red; }
+  	50% { color: green; }
+  	100% { color: blue; }
+}
