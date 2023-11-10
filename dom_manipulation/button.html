@@ -2,14 +2,20 @@
 <html>
     <head><title>JavaScript Button Example</title></head>
 
-    <body>
-    <button id='squeeze'>Squeeze me</button>
-    
+    <body style="display: flex; justify-content: center; align-items: center; height: 90vh; flex-direction: column;">
+    <button id='squeeze' style="font-size: 30px; padding: 20px; background: none; background-color: rgb(25, 139, 139); border: none; border-radius: 5px;">Squeeze me</button>
+    <p>Clicking the button will produce flashing images.</p>
     <script>
      let button = document.getElementById("squeeze");
+
      function shout(){
-	     alert("... and I squeak");
+         setInterval(changeBackground, 100);
      }
+
+     function changeBackground() {
+        document.body.style.backgroundColor = `rgb(${Math.random() * 255}, ${Math.random() * 255}, ${Math.random() * 255})`;
+     }
+
      button.addEventListener("click", shout);
     </script>
     </body>
