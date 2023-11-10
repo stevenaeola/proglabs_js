@@ -1,16 +1,31 @@
 <!DOCTYPE html>
 <html>
-    <head><title>JavaScript Button Example</title></head>
 
-    <body>
+<head>
+    <title>Creative JavaScript Button Example</title>
+</head>
+
+<body>
     <button id='squeeze'>Squeeze me</button>
-    
+
     <script>
-     let button = document.getElementById("squeeze");
-     function shout(){
-	     alert("... and I squeak");
-     }
-     button.addEventListener("click", shout);
+        document.addEventListener("DOMContentLoaded", function () {
+            let button = document.getElementById("squeeze");
+
+            function changeColor() {
+                // Generate random values for RGB
+                let randomColor = 'rgb(' +
+                    Math.floor(Math.random() * 256) + ',' +
+                    Math.floor(Math.random() * 256) + ',' +
+                    Math.floor(Math.random() * 256) + ')';
+
+                // Change the background color of the body
+                document.body.style.backgroundColor = randomColor;
+            }
+
+            button.addEventListener("click", changeColor);
+        });
     </script>
-    </body>
+</body>
+
 </html>
