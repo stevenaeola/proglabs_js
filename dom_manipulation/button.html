@@ -3,14 +3,29 @@
     <head><title>JavaScript Button Example</title></head>
 
     <body>
-    <button id='squeeze'>Squeeze me</button>
+    <button id='squeeze' style="width:250px;height:100px;">CLICK</button>
     
     <script>
      let button = document.getElementById("squeeze");
-     function shout(){
-	     alert("... and I squeak");
+     let width = 250;
+     let height = 100;
+
+     function increase_size(){
+        width *= 1.1;
+        height *= 1.1;
+        button.style.height = `${height}px`;
+        button.style.width = `${width}px`;
      }
-     button.addEventListener("click", shout);
+
+     random_colour = () => {
+        let r = Math.floor(Math.random() * 256);
+        let g = Math.floor(Math.random() * 256);
+        let b = Math.floor(Math.random() * 256);
+        button.style.backgroundColor = `rgb(${r},${g},${b})`;
+     }
+
+     button.addEventListener("click", increase_size);
+     button.addEventListener("click", random_colour);
     </script>
     </body>
 </html>
