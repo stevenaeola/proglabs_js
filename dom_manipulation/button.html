@@ -10,10 +10,10 @@
 
     <script>
         let button = document.getElementById("squeeze");
-        function shout() {
+        function randomise_background_colour() {
             document.body.style.backgroundColor = "#" + Math.floor(Math.random() * 16777215).toString(16);
         }
-        button.addEventListener("click", shout);
+        button.addEventListener("click", randomise_background_colour);
     </script>
 </body>
 
