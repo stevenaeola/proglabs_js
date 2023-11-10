@@ -5,12 +5,51 @@
     <body>
     <button id='squeeze'>Squeeze me</button>
     
+    <form id='MessageForm' onsubmit="return processForm()">
+        <label for="name">Enter your name:</label>
+        <input type="text" id="name" required>
+        <button type="submit">Submit</button>
+    </form>
+
+    <img id="Smile" src="images/smile.jpg" alt="A yellow smiley face" />
+    <p id="Welcome message"></p>
+
     <script>
-     let button = document.getElementById("squeeze");
-     function shout(){
-	     alert("... and I squeak");
-     }
-     button.addEventListener("click", shout);
+        
+        let button = document.getElementById("squeeze");
+        let form = document.getElementById("MessageForm")
+        let smileImage = document.getElementById("Smile")
+        let welcomeMessage = document.getElementById("Welcome message")
+
+        function onLoad(){
+            form.hidden = true
+            smileImage.hidden = true
+            console.log("Hello world")
+        }
+
+        function shout(){
+            form.hidden = false
+            smileImage.hidden = true
+            button.hidden = true
+            welcomeMessage.textContent = ""
+            button.textContent = "Squeak"
+	        alert("... and I squeak");  
+        }
+        button.addEventListener("click", shout);
+
+        function processForm(){
+            `Get the name they entered`
+            let name = document.getElementById("name").value
+
+            form.hidden = true
+            button.hidden = false
+            welcomeMessage.textContent = "Hello " + name + "!"
+            smileImage.hidden = false
+
+            return false; `prevent the page from refreshing`
+        }
+
+        window.onload = onLoad;
     </script>
     </body>
 </html>
