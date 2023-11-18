@@ -170,9 +170,9 @@
      of recipes with
      [push](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/push). This
      data will stay only as long as the server is running. To extract variables from the body
-     (i.e. POST variables) you will need to add the line
+     (i.e. POST variables from browsers) you will need to add the line
      ```
-     app.use(express.urlencoded()); //Parse URL-encoded bodies
+     app.use(express.urlencoded({ extended: false })); //Parse URL-encoded bodies
      ```
      Once this is done you can access POST variables in a request with `req.body.var_name`, just
      like you did with route and query values.
