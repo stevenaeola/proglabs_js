@@ -116,7 +116,7 @@
      Load the `index.html` page into your web browser, by using `open with` from the file
      navigator. For now we are not serving the HTML page through our web server. 
      When you submit the form, you
-     should get response from the web page. Note that form is simply creating the URL for a GET request.
+     should get response from the web page. Note that the form is simply creating the URL for a GET request.
 
 
 5.   Make your GET request do something more interesting than just printing out the parameter: use the
