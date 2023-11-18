@@ -121,7 +121,7 @@
 
 5.   Make your GET request do something more interesting than just printing out the parameter: use the
    parameter as a search key. Firstly you need some data. I have provided some potato recipes for
-   you, based on a response that I got from <http://www.recipepuppy.com/>. The format is JSON (JavaScript Object Notation),
+   you, based on a response that I got from <https://api-ninjas.com/api/recipe>. The format is JSON (JavaScript Object Notation),
    which is basically the same syntax that JavaScript uses for object literals (although there are
    [some small
    differences](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON),
@@ -135,7 +135,7 @@
      ```
    
      Make this a global variable (not usually a great idea), i.e. not defined inside any function, so
-    that it is accesible from all of your handlers. 
+    that it is accessible from all of your handlers. 
    
      Do this with a new project (new directory, run `npm init` again) and define an endpoint (i.e. a route)
    which takes a query string parameter that is used as a search key, returning only those recipes
@@ -170,14 +170,9 @@
      of recipes with
      [push](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/push). This
      data will stay only as long as the server is running. To extract variables from the body
-     (i.e. POST variables) you will need to use the
-     [body-parser](https://www.npmjs.com/package/body-parser) package. More recent versions of
-     express include this by default, but you may have to `npm install body-parser`. This is known
-     as _express middleware_ i.e. something that plugs into express to handle particular types of
-     requests. For now you just need to include this in your server code:
+     (i.e. POST variables) you will need to add the line
      ```
-     var bodyParser = require('body-parser');
-     app.use(bodyParser.urlencoded({ extended: false }));
+     app.use(express.urlencoded()); //Parse URL-encoded bodies
      ```
      Once this is done you can access POST variables in a request with `req.body.var_name`, just
      like you did with route and query values.
