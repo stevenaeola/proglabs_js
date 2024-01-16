@@ -4,13 +4,28 @@
 
     <body>
     <button id='squeeze'>Squeeze me</button>
-    
+    <div id="div2">
+        <button id="funButton">Click me</button>
+    </div>
+    <div id="div1">
+
+    </div>
     <script>
      let button = document.getElementById("squeeze");
+     let button2 = document.getElementById("funButton");
      function shout(){
 	     alert("... and I squeak");
      }
+     function fun(event){
+         const funButton = event.target
+         const cloned = funButton.cloneNode(true);
+         cloned.id += "-";
+         const div2 = document.getElementById("div2");
+         div2.appendChild(cloned);
+         cloned.addEventListener("click",fun)
+     }
      button.addEventListener("click", shout);
+     button2.addEventListener("click",fun);
     </script>
     </body>
 </html>
