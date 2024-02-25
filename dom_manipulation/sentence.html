@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head><title>Sentence Creation</title></head>
+
+    <body>
+    <button id='sentence' class="button" style="background-color: black; color: aqua;">Press For Sentence</button>
+    
+    <script>
+           
+
+
+    let verbs = ["begged", "settled", "fooled", "used", "waved", "dusted", "rejoiced", "shocked", "faxed", "repaired", "prepared", "filled", "preceded", "completed"];
+    let adjectives = ["outrageous", "polite", "silky", "silly", "squeamish", "acoustic", "nosy", "secret", "orange", "lazy", "puny", "ruthless", "hot", "cowardly"];
+    let nouns = ["appartment", "growth", "meal", "dog", "cat", "bear", "polar bear", "dragon", "rabbit", "meerkat", "shark", "axolotl", "platypus", "naked mole-rat"];
+    let adverbs = ["deftly", "crazily", "needily", "badly", "reassuringly", "zestily", "noisily", "hastily", "vainly", "frantically", "mockingly", "eagerly", "bashfully", "unethically"];
+
+    let button = document.getElementById("sentence");
+     function shout(){
+        
+        sentence = "The";
+        Y = false;
+        for (i=0; i<4;i++)
+        {
+            let x = Math.round(Math.random() * 13);
+            if (i==0)
+            {
+                sentence = sentence + " " + adjectives[x];
+            }
+            else if (i==1)
+            {
+                sentence = sentence + " " + nouns[x]
+                if (x==12)
+                {
+                    Y = true;
+                }
+            }
+            else if (i==2)
+            {
+                sentence = sentence + " " + verbs[x];
+            }
+            else
+            {
+                sentence = sentence + " " + adverbs[x];
+            }
+        }        
+        alert(sentence);
+        if (Y==true)
+        {
+            var audio = new Audio('perrytheplatypus.mp3');
+            audio.play();
+            perrytheplatypus(sentence);
+        }
+        
+    }    
+
+
+    function perrytheplatypus(s)
+    {
+        p = "PERRY " + s.toUpperCase();
+        alert(p);
+    }
+
+    button.addEventListener("click", shout);
+
+    </script>
+
+    <style>
+        .button{
+            height: 100px;
+            width: 200px;
+            text-align: center;
+        }
+
+        body {
+            background-image: url(tree.PNG);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+    </style>
+    </body>
+</html>
