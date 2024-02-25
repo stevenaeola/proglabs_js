@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-us">
   <head>
+    
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <title>Styling lists</title>
@@ -10,14 +11,27 @@
       html {
         font-family: Helvetica, Arial, sans-serif;
         font-size: 10px;
+        background-color: #cd9834;
+        }
+      body {
+       border: 10px solid black;
+       padding: 0 20px 20px 20px;
+       margin: 0 auto;
+       width: 1500px;
+       background-color: #c13e3e;
+
       }
 
       h2 {
         font-size: 2rem;
+        text-align: center;
+        text-decoration: underline;
+        text-decoration: bold;
       }
 
       ul,ol,dl,p {
         font-size: 1.5rem;
+        text-align: center;
       }
 
       li, p {
@@ -29,6 +43,7 @@
       ul {
         padding-left: 2rem;
         list-style-type: none;
+        text-align: center;
       }
 
       ul li {
@@ -43,29 +58,37 @@
 
       ol {
         list-style-type: upper-roman;
+        text-align: center;
       }
-
       /* Description list styles */
 
       dd, dt {
         line-height: 1.5;
+        text-align: center;
       }
 
       dt {
         font-weight: bold;
+        text-align: center;
       }
-
+      
+      .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+        } 
     </style>
   </head>
   <body>
     <h2>Shopping (unordered) list</h2>
-
+    <img src="shopping.png" style="width:200px;height:200px" class="center">   </img>
     <p>Paragraph for reference, paragraph for reference, paragraph for reference, paragraph for reference, paragraph for reference, paragraph for reference.</p>
 
     <ul>
       <li>Humous</li>
       <li>Pitta</li>
-      <li>Green salad</li>
+      <li color = "green">Green salad</li>
       <li>Halloumi</li>
     </ul>
 
@@ -73,7 +96,7 @@
 
     <p>Paragraph for reference, paragraph for reference, paragraph for reference, paragraph for reference, paragraph for reference, paragraph for reference.</p>
 
-    <ol start="4">
+    <ol start="4" class="center">
       <li>Toast pitta, leave to cool, then slice down the edge.</li>
       <li>Fry the halloumi in a shallow, non-stick pan, until browned on both sides.</li>
       <li>Wash and chop the salad.</li>
@@ -81,7 +104,7 @@
     </ol>
 
     <h2>Ingredient description list</h2>
-
+    
     <p>Paragraph for reference, paragraph for reference, paragraph for reference, paragraph for reference, paragraph for reference, paragraph for reference.</p>
 
     <dl>
@@ -96,5 +119,8 @@
     </dl>
 
 
+    
+
   </body>
+  
 </html>
