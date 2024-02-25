@@ -9,6 +9,8 @@
      let button = document.getElementById("squeeze");
      function shout(){
 	     alert("... and I squeak");
+         
+        setTimeout(shout, 1000)
      }
      button.addEventListener("click", shout);
     </script>
