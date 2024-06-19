@@ -49,6 +49,6 @@ Peer review is a crucial part of professional practice in software development. 
 
 7. Commit and push your comments and review file to your forked repository, then make a pull request of the changes in your forked repository to the original repository. [Read about pull requests](https://help.github.com/articles/creating-a-pull-request-from-a-fork/) if it's not clear what to do.
 
-8. Having carried our both of the reviews of other gropus, look together at the incoming pull requests. Add the review files to your repository. Fix any problems they have identified and respond to the pull request indicating what changes you have made.
+8. Having carried our both of the reviews of other groups, look together at the incoming pull requests. Add the review files to your repository. Fix any problems they have identified and respond to the pull request indicating what changes you have made.
 
        
