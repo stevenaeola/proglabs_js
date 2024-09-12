@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Poem Generator</title>
+    <style>
+        .poem
+        {
+            font-family: monospace;
+            font-weight: bold;
+        }
+
+        div
+        {
+            background-color: lightgray;
+            border-radius: 1rem;
+            padding: 0.1px 1rem 1px 1rem;
+            margin: 0.5rem 10% 0.5rem 10%
+        }
+
+        div div 
+        {
+            background-color: grey;
+            margin-top: 0.25rem;
+            margin-bottom: 0;
+            margin: 0.5rem 0 0.5rem 0;
+            padding: 1em;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Poem generator</h1>
+
+    <div>
+        <h2>Poems</h2>
+        <button id="poem-button">Generate Poem</button>
+        <div id="poem-out" class="poem">
+            Poem here!
+        </div>
+    </div>
+
+    <div>
+        <h2>Word Bank</h2>
+        <h3>Nouns</h3>
+        <textarea id="txt-nouns">
+bee
+table
+mouse
+building
+horse
+explosion
+        </textarea>
+        <h3>Adjectives</h3>
+        <textarea id="txt-adjectives">
+dead
+boring
+lost
+heavy
+falling
+        </textarea>
+        <h3>Verbs</h3>
+        <textarea id="txt-verbs">
+hovered
+ran
+decayed
+fell
+escaped
+        </textarea>
+        <h3>Adverbs</h3>
+        <textarea id="txt-adverbs">
+quickly
+slowly
+floopily
+urgently
+unnecessarily
+        </textarea>
+    </div>
+
+    <script>
+        {
+            let btn = document.getElementById("poem-button");
+            let output = document.getElementById("poem-out");
+            let nouns = document.getElementById("txt-nouns");
+            let verbs = document.getElementById("txt-verbs");
+            let adjectives = document.getElementById("txt-adjectives");
+            let adverbs = document.getElementById("txt-adverbs");
+            function generatePoem()
+            {
+                let result = "The " + pickRandom(adjectives) + " " + pickRandom(nouns) + " " + pickRandom(verbs) + " " + pickRandom(adverbs) + ".";
+                output.innerText = result;
+            }
+
+            function pickRandom(txtElement)
+            {
+                let txt = txtElement.textContent;
+                txt.split("\n");
+                choices = []
+                for (s of txt.split("\n"))
+                {
+                    if (txt.match(/^\s*$/)) { continue; }
+                    choices.push(s);
+                }
+
+                if (choices.length == 0) { return ""; }
+                return choices[Math.round(Math.random() * choices.length) % choices.length];
+            }
+
+            btn.addEventListener("click", generatePoem);
+        }
+    </script>
+</body>
+</html>

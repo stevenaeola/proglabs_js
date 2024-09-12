@@ -7,6 +7,22 @@
     
     <script>
      let button = document.getElementById("squeeze");
+     
+        let counter = 0;
+        let audio = null;
+        function count() {
+            counter++;
+            if (counter == 3) {
+                audio = document.createElement("audio");
+                // License: CC BY 3.0, Author Mike Koenig. Retrieved 09-11-2022 at https://soundbible.com/1859-Pissed-Off-Duck.html
+                audio.src = "pissed_off_duck-Mike_Koenig-1752213564.mp3"
+                audio.autoplay = false;
+                document.body.append(audio);
+            }
+            else if (counter > 3) { audio.play(); }
+        }
+        button.addEventListener("click", count);
+
      function shout(){
 	     alert("... and I squeak");
      }
