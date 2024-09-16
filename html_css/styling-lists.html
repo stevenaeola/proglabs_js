@@ -3,61 +3,13 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title>Styling lists</title>
-    <style>
-      /* General styles */
-
-      html {
-        font-family: Helvetica, Arial, sans-serif;
-        font-size: 10px;
-      }
-
-      h2 {
-        font-size: 2rem;
-      }
-
-      ul,ol,dl,p {
-        font-size: 1.5rem;
-      }
-
-      li, p {
-        line-height: 1.5;
-      }
-
-      /* Unordered list styles */
-
-      ul {
-        padding-left: 2rem;
-        list-style-type: none;
-      }
-
-      ul li {
-        padding-left: 2rem;
-        background-image: url(star.svg);
-        background-position: 0 0;
-        background-size: 1.6rem 1.6rem;
-        background-repeat: no-repeat;
-      }
-
-      /* Ordered list styles */
-
-      ol {
-        list-style-type: upper-roman;
-      }
-
-      /* Description list styles */
-
-      dd, dt {
-        line-height: 1.5;
-      }
-
-      dt {
-        font-weight: bold;
-      }
-
-    </style>
+    <link rel="stylesheet" href="pasta_site_style.css">
+    <title>Recipes</title>
+    
   </head>
   <body>
+
+    <div class="textArea">
     <h2>Shopping (unordered) list</h2>
 
     <p>Paragraph for reference, paragraph for reference, paragraph for reference, paragraph for reference, paragraph for reference, paragraph for reference.</p>
@@ -74,7 +26,7 @@
     <p>Paragraph for reference, paragraph for reference, paragraph for reference, paragraph for reference, paragraph for reference, paragraph for reference.</p>
 
     <ol start="4">
-      <li>Toast pitta, leave to cool, then slice down the edge.</li>
+      <li id="toastPitta">Toast pitta, leave to cool, then slice down the edge.</li>
       <li>Fry the halloumi in a shallow, non-stick pan, until browned on both sides.</li>
       <li>Wash and chop the salad.</li>
       <li>Fill pitta with salad, humous, and fried halloumi.</li>
@@ -95,6 +47,22 @@
       <dd>That green healthy stuff that many of us just use to garnish kebabs.</dd>
     </dl>
 
+    <h2>Add a recipe?..</h2>
+    <form action="styling-lists.html" method="post" class="wrapper">
+      <ul>
+        <li>
+          <label for="name" id="name_txt">Name:</label>
+          <input type="text" id="name" name="user_name">
+        </li>
+        <li>
+          <label for="mail" id="email">E-mail</label>
+          <input type="email" id="mail" name="user_email">
+        </li>
 
+        <button type="submit" id="submitButton" onclick="onEnterOfForm()">Send your message</button>
+      </ul>      
+    </form>
+
+  </div>
   </body>
 </html>
