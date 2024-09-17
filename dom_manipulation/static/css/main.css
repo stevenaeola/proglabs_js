@@ -1,0 +1,76 @@
+@import url('./fonts/fonts.css');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	background-color: #424040;
+}
+
+main#site-content {
+	width: 30vw;
+	padding: 30px 20px;
+	border-radius: 11px;
+}
+
+main#site-content > section {
+	width: auto;
+	background-color: ivory;
+	border-radius: 15px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 50px 20px
+}
+
+main#site-content > section:not(:last-child) {
+	margin-bottom: 30px;
+}
+
+div#title-container {
+	font-family: "EB Garamond";
+	font-size: 40px;
+	font-weight: 900;
+	color: #7c7474;
+}
+
+div#squeeze-container {
+	margin-top: 10px
+}
+
+div#squeeze-container>button {
+	font-family: "EB Garamond";
+	font-weight: 500;
+	background-color: transparent;
+	border: transparent;
+	border-bottom: 3px solid #7c7474;
+	color: #7c7474;
+	font-size: 20px;
+	padding: 10px 20px;
+	transition: 100ms ease-out
+}
+
+div#squeeze-container>button:hover {
+	padding-left: 25px;
+	padding-right: 25px;
+	cursor: pointer;
+}
+
+div#sentence-container {
+	height: 30px;
+}
+
+span#the-sentence {
+	font-size: 20px;
+	color: #7c7474;
+	transition: 200ms ease-out;
+}
