@@ -1,16 +1,58 @@
 <!DOCTYPE html>
 <html>
     <head><title>JavaScript Button Example</title></head>
-
+    <style>
+    button{
+        display: block;
+        position: absolute;
+    }
+    </style>
     <body>
-    <button id='squeeze'>Squeeze me</button>
+    <h1>Thing that makes random sentences</h1>
+    <div id="randomsentence"></div>
+
+
+    <button id='randomstring'>Squeeze me</button>
+    
     
     <script>
-     let button = document.getElementById("squeeze");
-     function shout(){
-	     alert("... and I squeak");
+     let button = document.getElementById("randomstring");
+     
+     button.addEventListener("click", makeRandomSentence);
+     
+     const adjectives = ["beautiful","cool","sexy","inspiring","smart","elegant"];
+     const noun = ["dog","person","building","car","computer","spinal cord"];
+     const verb = ["rubs","runs","clicks","squeezes","licks","eats"];
+     const adverb = ["gingerly","quickly","menacingly","slopingly","lazily","swimmingly"];
+     const sentence = "The"
+
+     function getRandomIndex(arr){
+        const num = Math.floor(Math.random() * arr.length);
+        return num;
      }
-     button.addEventListener("click", shout);
+
+     function makeRandomSentence(){
+        R_adj = adjectives[getRandomIndex(adjectives)];
+        R_noun = noun[getRandomIndex(noun)];
+        R_verb = verb[getRandomIndex(verb)];
+        R_adverb = adverb[getRandomIndex(adverb)];
+
+        let result = sentence.concat(" ",R_adj," ",R_noun," ",R_verb," ",R_adverb)
+        
+        document.getElementById("randomsentence").innerHTML = result;
+    }
+    
+    var b = document.querySelector("button");
+    b.addEventListener("click",change);
+    
+    function change(){
+        var i = Math.floor(Math.random()*500)+1;
+        var j = Math.floor(Math.random()*500)+1;
+        b.style.left = i+"px";
+        b.style.top = j+"px";
+    }
+    
+    button.addEventListener("click", fun); 
     </script>
     </body>
 </html>
