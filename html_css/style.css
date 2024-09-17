@@ -1,0 +1,224 @@
+/* Variable Declaration */
+:root {
+	--body-height: 75vh;
+	--body-width: 80vw;
+}
+
+/* General Styles */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: rgba(0, 0, 0, 0.15);
+	width: 100vw;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+/* Header Styles */
+
+header {
+	display: grid;
+	place-items: center;
+	width: 100%;
+	height: calc(100vh - 10vh - var(--body-height));
+	color: white;
+	font-family: "Ubuntu", sans-serif;
+	font-size: 2.5rem;
+}
+
+#title {
+	animation: 1s ease-out 0s 1 fade-in;
+}
+
+@keyframes fade-in {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+/* Input Box Styling */
+
+.insert-new-item {
+	width: 100vw;
+	height: 10vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+form {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+input {
+	padding-left: 20px;
+	padding-right: 20px;
+	font-family: "Roboto", sans-serif;
+	font-size: 1.15rem;
+	color: rgb(49, 49, 49);
+	width: 35vw;
+	height: 60px;
+	background-color: rgba(75, 88, 95, 0.6);
+	border: 3px solid rgb(98, 98, 98);
+	border-radius: 50px;
+	transition: 0.5s ease;
+}
+
+input:focus {
+	border: 5px solid rgb(98, 98, 98);
+	background-color: rgba(96, 108, 114, 0.6);
+	outline: none;
+}
+
+.buttons {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-around;
+}
+
+button {
+	font-size: 17px;
+	color: #3a3a3a;
+	width: 30%;
+	outline: 3px solid rgb(98, 98, 98);
+	border-radius: 10px;
+	padding: 10px 20px 10px 20px;
+	background-color: rgba(75, 88, 95, 0.6);
+	border: none;
+	transition: 0.5s ease;
+}
+
+button:hover {
+	outline: 5px solid rgb(98, 98, 98);
+	background-color: rgba(96, 108, 114, 0.6);
+}
+
+/* Card Setup Styles */
+
+.cards {
+	font-family: "Roboto", sans-serif;
+	width: 80vw;
+	height: var(--body-height);
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+@keyframes fade-in-move {
+	0% {
+		opacity: 0;
+		transform: translateX(5%);
+	}
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+
+#card1 {
+	animation: 1s ease-out 0s 1 fade-in-move;
+}
+
+#card2 {
+	animation: 1s ease-out 0.2s 1 fade-in-move;
+}
+
+#card3 {
+	animation: 1s ease-out 0.4s 1 fade-in-move;
+}
+
+.card {
+	padding: 20px;
+	border-radius: 10px;
+	outline: 2px solid rgba(71, 71, 71, 0.45);
+	height: 60vh;
+	background-color: rgba(75, 88, 95, 0.6);
+	width: calc(var(--body-width) / 3 - 2.5vw);
+	transition: 0.5s ease;
+}
+
+.card:hover {
+	outline: 4px solid rgba(71, 71, 71, 0.45);
+}
+
+.heading {
+	font-size: 2rem;
+	color: white;
+	padding-bottom: 5%;
+}
+
+p {
+	padding-bottom: 5%;
+}
+
+ul,
+ol,
+dl,
+p {
+	color: rgb(193, 193, 193);
+	font-size: 1.1rem;
+}
+
+li,
+p {
+	line-height: 1.5;
+}
+
+li,
+.item {
+	transition: 0.2s;
+}
+
+li:hover,
+.item:hover {
+	color: white;
+	cursor: default;
+}
+
+/* Description list styles */
+
+dd,
+dt {
+	line-height: 1.5;
+}
+
+dt {
+	font-weight: bold;
+}
+
+/* Media Queries for Smaller devices */
+@media (max-width: 1050px) {
+	button {
+		width: 45%;
+	}
+	input {
+		width: 60vw;
+	}
+	main {
+		padding-top: 5vh;
+	}
+	.cards {
+		width: 80vw;
+		height: auto;
+		flex-direction: column !important;
+	}
+	.card {
+		margin-top: 3vh;
+		width: 100%;
+		height: auto;
+	}
+}
