@@ -3,13 +3,22 @@
     <head><title>JavaScript Button Example</title></head>
 
     <body>
-    <button id='squeeze'>Squeeze me</button>
+    <button id='squeeze'>Squeeze me if you please</button>
     
     <script>
      let button = document.getElementById("squeeze");
-     function shout(){
-	     alert("... and I squeak");
-     }
+     let count = 0;
+	    function shout(){
+	     count+=1;
+	     if (count==1){
+	     	alert("ow")
+	     }
+	     else if (count==2){
+     		alert("owie")
+	     }
+	     else {
+		alert("stop it")};
+     } 
      button.addEventListener("click", shout);
     </script>
     </body>
