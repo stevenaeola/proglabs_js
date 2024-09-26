@@ -1,16 +1,39 @@
 <!DOCTYPE html>
 <html>
-    <head><title>JavaScript Button Example</title></head>
-
-    <body>
-    <button id='squeeze'>Squeeze me</button>
+<head>
+    <title>Random String Generator</title>
+</head>
+<body>
     
+    <h2 style="font-family:'Courier New', Courier, monospace;">Random String Generator</h2>
+    <button id='squeeze'>aaaaaaaaa</button>
+    <div id="nope_place"></div>
+
     <script>
-     let button = document.getElementById("squeeze");
-     function shout(){
-	     alert("... and I squeak");
-     }
-     button.addEventListener("click", shout);
+        var nouns = ["person", "engine", "airport", "championship", "1999 Toyota Corolla", "organization", "depression", "affair", "difficulty", "environment", "equipment", "basis", "tradition", "data", "combination", "philosophy", "painting", "platform", "math", "dad", "camera", "establishment", "apple", "youth", "tension", "entertainment", "salad", "employer", "population", "measurement", "union", "ladder", "quantity", "introduction", "freedom", "percentage", "discussion", "reception", "art", "chapter", "setting", "security", "height", "application", "theory", "conclusion", "bird", "pie", "chest", "virus"];
+        var verbs = ["sigh", "neglect", "campaign", "sell", "design", "impose", "emphasize", "compile", "instruct", "feel", "resign", "attack", "mean", "pronounce", "respect", "glance", "supervise", "tempt", "ease", "locate", "share", "represent", "ship", "urge", "associate", "omit", "emphasise", "reckon", "exhibit", "sit", "couple", "expect", "grab", "eliminate", "like", "differentiate", "explode", "approve", "defeat", "deserve", "sack", "characterise", "guess", "slam", "blame", "spare", "account", "sort", "hire", "wander"];
+        var adverbs = ["frequently", "awkwardly", "questioningly", "queasily", "loosely", "occasionally", "knavishly", "too", "judgementally", "deliberately", "thoroughly", "triumphantly", "obediently", "swiftly", "effectively", "stealthily", "fiercely", "mysteriously", "originally", "elegantly", "quirkily", "carelessly", "cruelly", "gayly", "energetically", "miserably", "courageously", "quickly", "possibly", "curiously", "continually", "thoughtfully", "kissingly", "closely", "majestically", "forth", "gently", "dramatically", "initially", "joyously", "optimistically", "calmly", "searchingly", "slowly", "fatally", "unnaturally", "inwardly", "reproachfully", "kookily", "shakily"];
+        var adjectives = ["actually", "vengeful", "ablaze", "worthless", "unique", "closed", "literate", "sufficient", "fair", "civil", "repulsive", "beneficial", "curvy", "recondite", "squalid", "full", "succinct", "billowy", "possible", "utter", "elated", "sassy", "diligent", "unadvised", "pastoral", "sore", "gorgeous", "periodic", "shut", "barbarous", "unknown", "divergent", "superficial", "permissible", "unwieldy", "cold", "electronic", "dull", "heartbreaking", "telling", "raspy", "smart", "medical", "truthful", "frightening", "plain", "silly", "piquant", "trashy", "economic"];
+        let button = document.getElementById("squeeze");
+        function nope() {
+            // This is terrible but I really can't be bothered to make it better
+            let x = Math.floor(Math.random() * 49); 
+            let y = Math.floor(Math.random() * 49); 
+            let z = Math.floor(Math.random() * 49); 
+            let z1 = Math.floor(Math.random() * 49); 
+            wordx = nouns[x];
+            wordy = verbs[y];
+            wordz = adverbs[z];
+            wordz1 = adjectives[z1]
+            const stn = ["The",wordz1,wordx,wordy,wordz];
+            const outstn = stn.join(" ") + "."
+            document.getElementById("nope_place").innerHTML = outstn;
+            }
+
+        button.addEventListener("click", nope);
     </script>
-    </body>
+
+    
+</body>
+
 </html>
