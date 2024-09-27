@@ -2,15 +2,30 @@
 <html>
     <head><title>JavaScript Button Example</title></head>
 
+    <style>
+      body{
+        transition: 0.5s;
+        display:grid;
+        grid-template-columns: auto;
+        align-items: center;
+        justify-items: center;
+        background: linear-gradient(90deg, rgba(9,9,121,1) 0%, rgba(0,212,255,1) 12%, rgba(0,255,164,1) 25%, rgba(50,255,0,1) 37%, rgba(239,255,0,1) 50%, rgba(255,190,0,1) 62%, rgba(255,0,0,1) 75%, rgba(255,0,127,1) 87%, rgba(194,0,255,1) 100%);
+        width: 100vw;
+        height: 100vh;
+      }
+    </style>
+
     <body>
-    <button id='squeeze'>Squeeze me</button>
-    
+    <button id='squeeze'>Press me</button>
+
     <script>
      let button = document.getElementById("squeeze");
-     function shout(){
-	     alert("... and I squeak");
-     }
-     button.addEventListener("click", shout);
+     rotate = 0
+     function flip() {
+       rotate += 90
+       document.querySelector("body").style.transform = ("rotateZ(" + rotate+ "deg)")
+    }
+     button.addEventListener("click", flip);
     </script>
     </body>
 </html>
