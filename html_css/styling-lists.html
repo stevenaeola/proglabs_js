@@ -5,20 +5,37 @@
     <meta name="viewport" content="width=device-width">
     <title>Styling lists</title>
     <style>
+body {
+background-color: DarkSeaGreen;
+}
       /* General styles */
 
+
       html {
-        font-family: Helvetica, Arial, sans-serif;
+        font-family: Helvetica, Arial, serif;
         font-size: 10px;
+padding: 75px;
       }
 
+
       h2 {
-        font-size: 2rem;
+        font-size: 4rem;
+font-family: "Brush Script MT", cursive;
       }
 
       ul,ol,dl,p {
         font-size: 1.5rem;
       }
+p { 
+font-style: italic;
+}
+
+img {
+display: block;
+margin-left: auto;
+margin-right: auto;
+width: 40%;
+}
 
       li, p {
         line-height: 1.5;
@@ -28,11 +45,11 @@
 
       ul {
         padding-left: 2rem;
-        list-style-type: none;
+        list-style-type: circle;
       }
 
       ul li {
-        padding-left: 2rem;
+        padding-left: 3rem;
         background-image: url(star.svg);
         background-position: 0 0;
         background-size: 1.6rem 1.6rem;
@@ -69,11 +86,13 @@
       <li>Halloumi</li>
     </ul>
 
+<img src="hummuspublicdomain.jpeg" alt="Bowl of humous surrounded by pitta triangles.">
+
     <h2>Recipe (ordered) list</h2>
 
     <p>Paragraph for reference, paragraph for reference, paragraph for reference, paragraph for reference, paragraph for reference, paragraph for reference.</p>
 
-    <ol start="4">
+    <ol start="1">
       <li>Toast pitta, leave to cool, then slice down the edge.</li>
       <li>Fry the halloumi in a shallow, non-stick pan, until browned on both sides.</li>
       <li>Wash and chop the salad.</li>
