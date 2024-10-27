@@ -9,7 +9,7 @@
 
 1. Make a group of three or four with other people in your practical session. If you need help to find group members ask the demonstrators. 
 
-2. Choose one person in the group to create a repository, and then to [add the other group members as collaborators](https://docs.github.com/en/issues/planning-and-tracking-with-projects/managing-your-project/managing-access-to-your-projects#managing-access-for-user-level-projects). Other group members should then clone the newly created repo
+2. Choose one person in the group to create a repository, and then to [add the other group members as collaborators](https://docs.github.com/en/issues/planning-and-tracking-with-projects/managing-your-project/managing-access-to-your-projects#managing-access-for-user-level-projects). Other group members should then clone the newly created repo. Each team member should make changes to their local repo, then commit and push them to the shared repo. If other changes have been made you will have to do a pull before your push, and if necessary resolve any conflicts.
 
    
 3. Develop a set of web pages describing applications of computing that make positive contributions  to society, linking with each other and to external pages where relevant. Include an index page and navigation links between the pages.
