@@ -10,11 +10,6 @@
 
 1. Preparation: look through the lists of methods JavaScript provides through the [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String), [Math](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math) and [Array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array) objects.
 
-2. Have a look at the file _button.html_ included in this directory of the repository. You are going to explore what happens when you change the file, and write a question about the effect of the change on PeerWise. If you haven't already registered for PeerWise then have a look at the [practical on HTML and CSS](../html_css/README.md) which includes instructions. You should already have a local copy of the forked version of the repository, if not then follow the instructions there. You will have to include any changes made from the original repository by 
-```
-git pull upstream main
-```
-Now make a change to the file that has a useful, interesting, beautiful or surprising result. Commit and push your change to your forked repository, then make a pull request to the original repo. Add a PeerWise question about the effect of your change. Answer some questions other people have written too.
 
 3. Write an HTML page with associated client-side JavaScript to generate a random sentence in English (or another language if you prefer). The sentence should take the form
 
@@ -34,6 +29,6 @@ Now make a change to the file that has a useful, interesting, beautiful or surpr
 
 4. Adapt your example so that instead of having the words predefined in the JavaScript code, they are typed in by the user. Do this with four separate [textarea](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea) inputs: one for adjectives; one for nouns; etc. You will need to give each _textarea_ a different _id_. You can access the value in most form elements (like _textarea_) using the _value_ property (a bit like the _innerHTML_ property we used before). You will need to take the string input by the user and break it into an array of words - there is a method in the [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) prototype which does this for you.
 
-5. Extend your work to generate a poem (maybe a [haiku](https://www.poetryfoundation.org/learn/glossary-terms/haiku-or-hokku) or a [limerick](https://www.poetryfoundation.org/learn/glossary-terms/limerick)). You could also take inspiration from <https://www.poem-generator.org.uk> or <https://www.song-lyrics-generator.org.uk/>. Generate it randomly in your JavaScript. Maybe you could make the page look pretty too with good HTML and CSS.
+5. Extend your work to generate a poem (maybe a [haiku](https://www.poetryfoundation.org/learn/glossary-terms/haiku-or-hokku) or a [limerick](https://www.poetryfoundation.org/learn/glossary-terms/limerick)). Generate it randomly in your JavaScript. Maybe you could make the page look pretty too with good HTML and CSS.
 
 
