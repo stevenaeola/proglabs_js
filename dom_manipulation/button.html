@@ -1,16 +1,32 @@
 <!DOCTYPE html>
-<html>
-    <head><title>JavaScript Button Example</title></head>
+<html lang="en">
+    <head>
+        <title>JavaScript Button Example</title>
+        <style>
+            .fit-image {
+                width: 400px;
+                height: 400px
+            }
+            html {
+                background-color: #232323;
+            }
+        </style>
+    </head>
 
     <body>
-    <button id='squeeze'>Squeeze me</button>
-    
-    <script>
-     let button = document.getElementById("squeeze");
-     function shout(){
-	     alert("... and I squeak");
-     }
-     button.addEventListener("click", shout);
-    </script>
+        <center>
+            <button onclick="show_image();">Press for a surprise</button>
+            <br><br>
+            <img id="cicada" class="fit-image" src="./cicada.png"
+                alt="Cicada on a leaf" style="visibility:hidden" />
+        </center>
+
+        <script>
+            let button = document.getElementById("cicada");
+            function show_image(){  
+                document.getElementById('cicada').style.visibility='visible';
+            }
+            button.addEventListener("click", show_image);
+        </script>
     </body>
 </html>
