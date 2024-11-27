@@ -4,13 +4,24 @@
 
     <body>
     <button id='squeeze'>Squeeze me</button>
-    
+
+    <div id = "div"></div>
     <script>
+     const adjectives = ["blue", "fat", "stupid", "happy", "smart"]
+     const nouns = ["dog", "textbook", "processor", "mathematician", "laptop"]
+     const verbs = ["eats", "studies", "jumps", "rages", "drinks"]
+     const adverbs = ["lazily", "happily", "angrily", "passionately", "stupidly"]
+     let div = document.getElementById("div");
      let button = document.getElementById("squeeze");
-     function shout(){
-	     alert("... and I squeak");
+     function random_element(arr) {
+        return arr[(Math.floor(Math.random() * arr.length))]
      }
-     button.addEventListener("click", shout);
+     function colour(){
+         const sentence = "The " + random_element(adjectives) + " " + random_element(nouns) + " " + random_element(verbs) + " " + random_element(adverbs)
+	     document.body.style.backgroundColor="#" + Math.floor(Math.random() * 16777215).toString(16);
+         div.innerHTML += "<h1>" + sentence +  "</h1>";
+     }
+     button.addEventListener("click", colour);
     </script>
     </body>
 </html>
