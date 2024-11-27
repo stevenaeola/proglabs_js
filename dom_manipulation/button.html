@@ -1,16 +1,24 @@
 <!DOCTYPE html>
 <html>
-    <head><title>JavaScript Button Example</title></head>
 
-    <body>
+<head>
+    <title>JavaScript Button Example</title>
+</head>
+
+<body>
     <button id='squeeze'>Squeeze me</button>
-    
+
     <script>
-     let button = document.getElementById("squeeze");
-     function shout(){
-	     alert("... and I squeak");
-     }
-     button.addEventListener("click", shout);
+        let button = document.getElementById("squeeze");
+        function shout() {
+            let g = Math.floor(Math.random() * 255);
+            let b = Math.floor(Math.random() * 255);
+            let r = Math.floor(Math.random() * 255);
+            console.log(r, g, b);
+            document.body.style.setProperty("background-color", "rgb(" + r + ", " + g + ", " + b + ")");
+        }
+        button.addEventListener("click", shout);
     </script>
-    </body>
+</body>
+
 </html>
