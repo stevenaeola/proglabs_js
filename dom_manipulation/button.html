@@ -3,14 +3,55 @@
     <head><title>JavaScript Button Example</title></head>
 
     <body>
-    <button id='squeeze'>Squeeze me</button>
+    <button id='8Ball'>Magic 8 Ball</button>
     
     <script>
-     let button = document.getElementById("squeeze");
-     function shout(){
-	     alert("... and I squeak");
+     let button = document.getElementById("8Ball");
+     function magic(){
+	     let x = Math.floor(Math.random() * 20);
+		 if (x == 0){
+			alert("It is certain");
+		 }else if (x == 1){
+			alert("It is decidedly so");
+		 }else if (x == 2){
+			alert("Without a doubt");
+		 }else if (x == 3){
+			alert("Yes, definitely");
+		 }else if (x == 4){
+			alert("You may rely on it");
+		 }else if (x == 5){
+			alert("As I see it, yes");
+		 }else if (x == 6){
+			alert("Most likely");
+		 }else if (x == 7){
+			alert("Outlook good");
+		 }else if (x == 8){
+			alert("Yes");
+		 }else if (x == 9){
+			alert("Signs point to yes");
+		 }else if (x == 10){
+			alert("Reply hazy try again");
+		 }else if (x == 11){
+			alert("Ask again later");
+		 }else if (x == 12){
+			alert("Better not tell you now");
+		 }else if (x == 13){
+			alert("Cannot predict now");
+		 }else if (x == 14){
+			alert("Concentrate and ask again");
+		 }else if (x == 15){
+			alert("Don't count on it");
+		 }else if (x == 16){
+			alert("My reply is no");
+		 }else if (x == 17){
+			alert("My sources say no");
+		 }else if (x == 18){
+			alert("Outlook not so good");
+		 }else if (x == 19){
+			alert("Very doubtful");
+		 }
      }
-     button.addEventListener("click", shout);
+     button.addEventListener("click", magic);
     </script>
     </body>
 </html>
