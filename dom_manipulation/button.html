@@ -1,16 +1,20 @@
 <!DOCTYPE html>
 <html>
-    <head><title>JavaScript Button Example</title></head>
+    <head>
+        <title>JavaScript Button Example</title>
+    </head>
 
     <body>
-    <button id='squeeze'>Squeeze me</button>
+    <button id='squeeze'>Click Me</button>
+    <p id='output'></p>
     
     <script>
-     let button = document.getElementById("squeeze");
-     function shout(){
-	     alert("... and I squeak");
-     }
-     button.addEventListener("click", shout);
+        const squeeze = document.querySelector('#squeeze');
+        squeeze.addEventListener("click", () => {
+        const output = document.querySelector('#output');
+        output.insertAdjacentHTML("afterbegin",'Hello, how are you today?');
+        });
+    
     </script>
     </body>
 </html>
