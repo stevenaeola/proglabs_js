@@ -13,11 +13,13 @@
       }
 
       h2 {
-        font-size: 2rem;
+        font-size: 2.2rem;
+
+        text-decoration: underline;
       }
 
       ul,ol,dl,p {
-        font-size: 1.5rem;
+        font-size: 1.8rem;
       }
 
       li, p {
@@ -28,7 +30,7 @@
 
       ul {
         padding-left: 2rem;
-        list-style-type: none;
+        list-style-type: disc;
       }
 
       ul li {
@@ -55,20 +57,36 @@
         font-weight: bold;
       }
 
+      /* My Additions */
+      body {
+        background-color:#9FC2CC;
+      }
+
+      a {
+        color: green;
+      }
+
+      a:visited {
+        color: darkgreen;
+      }
+    
     </style>
   </head>
   <body>
+    <div id="Shopping">
     <h2>Shopping (unordered) list</h2>
 
     <p>Paragraph for reference, paragraph for reference, paragraph for reference, paragraph for reference, paragraph for reference, paragraph for reference.</p>
 
     <ul>
-      <li>Humous</li>
-      <li>Pitta</li>
-      <li>Green salad</li>
-      <li>Halloumi</li>
+      <li><a href="#Homous">Humous</a></li>
+      <li><a href="#Pitta">Pitta</a></li>
+      <li><a href="#Green salad">Green salad</a></li>
+      <li><a href="#Halloumi">Halloumi</a></li>
     </ul>
+    </div>
 
+    <div id="Recipe"></div>
     <h2>Recipe (ordered) list</h2>
 
     <p>Paragraph for reference, paragraph for reference, paragraph for reference, paragraph for reference, paragraph for reference, paragraph for reference.</p>
@@ -79,19 +97,20 @@
       <li>Wash and chop the salad.</li>
       <li>Fill pitta with salad, humous, and fried halloumi.</li>
     </ol>
+    </div>
 
     <h2>Ingredient description list</h2>
 
     <p>Paragraph for reference, paragraph for reference, paragraph for reference, paragraph for reference, paragraph for reference, paragraph for reference.</p>
 
     <dl>
-      <dt>Humous</dt>
+      <dt id="Homous">Humous</dt>
       <dd>A thick dip/sauce generally made from chick peas blended with tahini, lemon juice, salt, garlic, and other ingredients.</dd>
-      <dt>Pitta</dt>
+      <dt id="Pitta">Pitta</dt>
       <dd>A soft, slightly leavened flatbread.</dd>
-      <dt>Halloumi</dt>
+      <dt id="Halloumi">Halloumi</dt>
       <dd>A semi-hard, unripened, brined cheese with a higher-than-usual melting point, usually made from goat/sheep milk.</dd>
-      <dt>Green salad</dt>
+      <dt id="Green salad">Green salad</dt>
       <dd>That green healthy stuff that many of us just use to garnish kebabs.</dd>
     </dl>
 
