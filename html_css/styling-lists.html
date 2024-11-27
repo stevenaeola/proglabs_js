@@ -4,6 +4,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <title>Styling lists</title>
+
+    <link rel="icon" href="Images\favicon.ico" type="image/x-icon" />
+
+
     <style>
       /* General styles */
 
@@ -55,6 +59,17 @@
         font-weight: bold;
       }
 
+      .blink {
+                animation: blinker 2.5s linear 5;
+                color: red;
+                font-family: sans-serif;
+            }
+            @keyframes blinker {
+                50% {
+                    opacity: 0;
+                }
+            }
+
     </style>
   </head>
   <body>
@@ -63,18 +78,31 @@
     <p>Paragraph for reference, paragraph for reference, paragraph for reference, paragraph for reference, paragraph for reference, paragraph for reference.</p>
 
     <ul>
-      <li>Humous</li>
-      <li>Pitta</li>
-      <li>Green salad</li>
-      <li>Halloumi</li>
+      <li><b>Humous</b></li>
+      <li><i>Pitta</i></li>
+      <li><em>Green</em> <u>salad</u></li>
+      <li><strong>Halloumi</strong></li>
     </ul>
 
     <h2>Recipe (ordered) list</h2>
 
+
+    <p>
+      <marquee class="blink" loop="10" direction="right" scrollamount="100" behavior="alternate" bgcolor="gray">
+        <a href="https://www.coop.co.uk/recipes/sweet-chilli-halloumi-pitta">
+        <img src="Images/Halloumi Pitta.jpg" alt="A halloumi pitta wrapped in paper"/>
+
+      </a> 
+      </marquee>
+      
+
+
+    </p>
+
     <p>Paragraph for reference, paragraph for reference, paragraph for reference, paragraph for reference, paragraph for reference, paragraph for reference.</p>
 
-    <ol start="4">
-      <li>Toast pitta, leave to cool, then slice down the edge.</li>
+    <ol start="1">
+      <li><mark>Toast</mark> pitta, leave to <span>cool</span>, then slice down the edge.</li>
       <li>Fry the halloumi in a shallow, non-stick pan, until browned on both sides.</li>
       <li>Wash and chop the salad.</li>
       <li>Fill pitta with salad, humous, and fried halloumi.</li>
