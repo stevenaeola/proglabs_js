@@ -55,6 +55,22 @@
         font-weight: bold;
       }
 
+      /* Table styles */
+      
+      table, th, td {
+        border: 1px solid;
+        border-color: #aaa;
+      }
+
+      table {
+        font-size: 1.5rem;
+        border-collapse: collapse;
+      }
+
+      td, th {
+        padding: 1rem;
+      }
+
     </style>
   </head>
   <body>
@@ -95,6 +111,43 @@
       <dd>That green healthy stuff that many of us just use to garnish kebabs.</dd>
     </dl>
 
+    <h2>Nutritional information</h2>
 
+    <table>
+      <thead>
+        <tr>
+          <th>Ingredient</th>
+          <th>Fat/serving (g)</th>
+          <th>Protein/serving (g)</th>
+          <th>Carbs/serving (g)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Humous</td>
+          <td>5</td>
+          <td>2</td>
+          <td>5</td>
+        </tr>
+        <tr>
+          <td>Pitta</td>
+          <td>1</td>
+          <td>4</td>
+          <td>17</td>
+        </tr>
+        <tr>
+          <td>Halloumi</td>
+          <td>9</td>
+          <td>7</td>
+          <td>0</td>
+        </tr>
+        <tr>
+          <td>Green salad</td>
+          <td>0.1</td>
+          <td>0.6</td>
+          <td>1</td>
+        </tr>
+      </tbody>
+      </table>
   </body>
 </html>
