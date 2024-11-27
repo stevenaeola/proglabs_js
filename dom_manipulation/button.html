@@ -1,16 +1,60 @@
 <!DOCTYPE html>
 <html>
-    <head><title>JavaScript Button Example</title></head>
+    <head>
+        <title>JavaScript Button Example</title>
+        <link rel="stylesheet" href="main.css" />
+    </head>
 
     <body>
-    <button id='squeeze'>Squeeze me</button>
     
+    <button id='groovy'>Confetti Party!!</button>
+
     <script>
-     let button = document.getElementById("squeeze");
-     function shout(){
-	     alert("... and I squeak");
-     }
-     button.addEventListener("click", shout);
+        let button = document.getElementById("groovy");
+        const left = document.getElementById("left-side");
+        let active = false;
+        const maxCircles = 5000;
+        let activeCircles = 0;
+        
+        button.addEventListener("click", () => 
+        {
+            active = true;
+        })
+
+
+
+        document.onmousemove = e => 
+        {
+            console.log(active);
+            if(active && activeCircles < maxCircles)
+            {
+                console.log("enter loop");
+                let newCircle = document.createElement("div");
+                newCircle.classList.add("circle");
+                var colorPicker = Math.floor(Math.random() * 5);
+                newCircle.style.backgroundColor = '#'+Math.floor(Math.random()*16777215).toString(16);
+                newCircle.style.top = `${e.clientY / window.innerWidth * 100}%`;
+                newCircle.style.left = `${e.clientX / window.innerWidth * 100}%`;
+                document.body.appendChild(newCircle);
+                activeCircles++;
+            }
+        }
+        
+
+        function wait(ms)
+        {
+            const date = Date.now();
+            let curDate = null;
+
+            do
+            {
+                curDate = Date.now();
+            }
+            while (curDate - date < ms)
+        }
+
+
+
     </script>
     </body>
 </html>
