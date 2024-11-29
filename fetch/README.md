@@ -75,7 +75,7 @@ window.addEventListener('click', function(event){
    wherever it likes. You can use the [node-fetch
    package](https://www.npmjs.com/package/node-fetch) to use the same
    style of coding in your server as you have just learnt to do in the
-   client. 
+   client.  Have a look through the directories of APIs listed at https://mixedanalytics.com/blog/list-actually-free-open-no-auth-needed-apis/ or https://apipheny.io/free-api/, and see if any of them could work with a web-site that you would like to build. Adapt your server so that when it receives a request from the client it then makes a request to the remote API and forwards the results back to the client.
    
    [lecture]: https://github.com/stevenaeola/progblack_lectures/tree/main/js_fetch
 [previous practical]: https://github.com/stevenaeola/proglabs_js/tree/main/node_routing/
