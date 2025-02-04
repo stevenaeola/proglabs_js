@@ -1,10 +1,20 @@
 <!DOCTYPE html>
 <html>
-    <head><title>JavaScript Button Example</title></head>
+    <head><title>JavaScript Button Example</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <style>
+            button{position: absolute; background-color:lightgray;margin-left: 47%; margin-top: 25%; border-style: doubl; border-radius: 50%;border-color: darkgray;box-shadow: 2px 4px;} 
+
+        </style>
+    </head>
 
     <body>
-    <button id='squeeze'>Squeeze me</button>
-    
+        <div class="well-sm">
+            <button id='squeeze'>Squeeze me</button>
+        </div>
     <script>
      let button = document.getElementById("squeeze");
      function shout(){
