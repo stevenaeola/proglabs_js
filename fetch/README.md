@@ -40,7 +40,7 @@ window.addEventListener('click', function(event){
   ```
   
   See the [example code from the
-  lecture](https://github.com/stevenaeola/progblack_lectures/tree/main/js_fetch/server.js)
+  lecture](https://github.com/stevenaeola/proglectures_js/tree/main/js_fetch/server.js)
   to see how I did this. You can also check out the example
   client-side code in the [lecture][] to see how to piece it together.
   
@@ -77,5 +77,5 @@ window.addEventListener('click', function(event){
    style of coding in your server as you have just learnt to do in the
    client.  Have a look through the directories of APIs listed at https://mixedanalytics.com/blog/list-actually-free-open-no-auth-needed-apis/ or https://apipheny.io/free-api/, and see if any of them could work with a web-site that you would like to build. Adapt your server so that when it receives a request from the client it then makes a request to the remote API and forwards the results back to the client.
    
-   [lecture]: https://github.com/stevenaeola/progblack_lectures/tree/main/js_fetch
+   [lecture]: https://github.com/stevenaeola/proglectures_js/tree/main/js_fetch
 [previous practical]: https://github.com/stevenaeola/proglabs_js/tree/main/node_routing/
