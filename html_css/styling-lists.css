@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+html {
+	font-family: Roboto, Helvetica, Arial, sans-serif;
+	font-size: 10px;
+}
+
+h2 {
+	font-size: 2rem;
+}
+
+h2 {
+	text-align: center;
+}
+
+
+.navbar-content-inner {
+	display: flex;
+	justify-content: space-around;
+}
+
+.navbar-content-inner a {
+	color: #333;
+	font-size: 3rem;
+	text-decoration: none;
+}
+
+nav {
+	background-color: white;
+	margin-top: 10px;
+}
+
+@media screen and (orientation:portrait) {
+	#navbar-content {
+		display: none;
+		margin: 20px;
+	}
+
+	nav {
+		margin-left: 20px;
+	}
+
+	ul,
+	ol,
+	dl,
+	p {
+		font-size: 1.5rem;
+		background-color: black;
+		color: #eee;
+		border-radius: 10px;
+		padding: 20px;
+		margin: 10px;
+	}
+
+
+	ol {
+		padding: 40px;
+	}
+}
+
+@media screen and (orientation:landscape) {
+
+	ul,
+	ol,
+	dl,
+	p {
+		font-size: 1.5rem;
+		background-color: black;
+		color: #eee;
+		border-radius: 10px;
+		padding: 20px;
+		margin-left: auto;
+		margin-right: auto;
+		max-width: 50%;
+	}
+
+	ol {
+		padding-left: 20px;
+	}
+
+	nav {
+		max-width: 50%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	#navbar-content {
+		display: none;
+		margin-left: auto;
+		margin-right: auto;
+		max-width: 50%;
+	}
+}
+
+li,
+p {
+	line-height: 1.5;
+}
+
+/* Unordered list styles */
+
+ul {
+	list-style-type: none;
+}
+
+ul li {
+	background-image: url(star.svg);
+	background-position: 0 0;
+	background-size: 1.6rem 1.6rem;
+	background-repeat: no-repeat;
+}
+
+/* Ordered list styles */
+
+ol {
+	list-style-type: upper-roman;
+}
+
+/* Description list styles */
+
+dd,
+dt {
+	line-height: 1.5;
+}
+
+dt {
+	font-weight: bold;
+}
