@@ -5,7 +5,7 @@
 * Understanding different methods of testing
 * Manual testing with Postman
 * Automated unit testing with jest
-* Based on the [lecture on testing][]
+* Based on the [lecture]
 * This is for server-side testing only. Client-side testing is more complicated and beyond the scope of the module (and the assignment)
 
 ## Tasks
