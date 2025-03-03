@@ -23,7 +23,7 @@ If you need to run the Postman agent but can't install it, try the [Postman Clou
 
 5. If the API you are using has a POST method then try writing a postman request for it. You will have to take care to match the encoding of variables in the body. In the [lecture] we had a JSON-encoded raw body.
 
-If your API does not have a POST method then try creating a temporary one via <https://www.postb.in/>. Semd that a POST method via POSTMAN.
+If your API does not have a POST method then try creating a temporary one via <https://www.postb.in/>. Send that a POST method via Postman.
 
 6. Within a node project [install jest](https://jestjs.io/docs/getting-started). Then create and run one or more jest tests for the GET method(s) in the API you have chosen. Follow the example in the [lecture] - you will need to install the `supertest` package. Include a test for what happens when things go wrong e.g. a malformed request or a wrong url.
 
