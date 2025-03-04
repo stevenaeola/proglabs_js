@@ -3,13 +3,66 @@
     <head><title>JavaScript Button Example</title></head>
 
     <body>
+    <p>What are you feeling right now?</p>    
+    <div>
+        <input type="radio" name="chimp" value="Happy" id="happy">
+        <label for="happy">Happy</label>
+    </div>
+    <div>
+        <input type="radio" name="chimp" value="Sad" id="sad">
+        <label for="sad">Sad</label>
+    </div>
+    <div>
+        <input type="radio" name="chimp" value="Sleepy" id="sleepy">
+        <label for="sleepy">Sleepy</label>
+    </div>
+    <div>
+        <input type="radio" name="chimp" value="Small" id="small">
+        <label for="small">Small</label>
+    </div>
+    
+
     <button id='squeeze'>Squeeze me</button>
+
+    <p id = "chimpicture"></p>
     
     <script>
      let button = document.getElementById("squeeze");
+     let radioButtons = document.querySelectorAll('input[name = "chimp"]');
+
      function shout(){
-	     alert("... and I squeak");
+	     alert("... and I chimp");
+         let pic = document.createElement("img");
+         pic.src = "https://upload.wikimedia.org/wikipedia/commons/6/6c/Chimpanzee_%2814679767561%29.jpg";
+         for (const radioButton of radioButtons)
+         {
+            if (radioButton.checked)
+            {
+                switch (radioButton.value)
+                {
+                    case "Happy":
+                        pic.src = "https://upload.wikimedia.org/wikipedia/commons/d/d8/Chimp_portrait_%285312048385%29.jpg";
+                        break;
+                    case "Sad":
+                        pic.src = "https://upload.wikimedia.org/wikipedia/commons/7/7c/Chimpanzee%2C_Ol_Pejeta_Conservancy%2C_Kenya_%2832450419367%29.jpg";
+                        break;
+                    case "Sleepy":
+                        pic.src = "https://upload.wikimedia.org/wikipedia/commons/c/cf/Chimp_yawn_-_Flickr_-_Carine06.jpg";
+                        break;
+                    case "Small":
+                        pic.src = "https://upload.wikimedia.org/wikipedia/commons/3/31/Chimpanzee_VII_%2813945324101%29.jpg";
+                        break;
+
+                }
+                
+            }
+
+            
+         }
+
+         document.getElementById('chimpicture').append(pic);
      }
+
      button.addEventListener("click", shout);
     </script>
     </body>
