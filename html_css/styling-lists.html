@@ -10,6 +10,8 @@
       html {
         font-family: Helvetica, Arial, sans-serif;
         font-size: 10px;
+        background-color: #22242b;
+        color: #fff;
       }
 
       h2 {
@@ -18,6 +20,7 @@
 
       ul,ol,dl,p {
         font-size: 1.5rem;
+        color: #dadada;
       }
 
       li, p {
@@ -42,17 +45,39 @@
       /* Ordered list styles */
 
       ol {
-        list-style-type: upper-roman;
+        list-style-type: "\1F959";
       }
 
-      /* Description list styles */
+      /* Details styles */
 
-      dd, dt {
-        line-height: 1.5;
+      details {
+        font-size: 1.5rem;
+        padding: 1rem;
+        border: 2px solid #dadada;
+        max-width: 400px;
+        border-radius: 8px;
+        margin-bottom: 1rem;
       }
 
-      dt {
-        font-weight: bold;
+      summary {
+        font-weight: 900;
+        font-size: 2rem;
+        color: #fff;
+        margin: 0 -1rem 0 -1rem;
+        padding: 0 1rem 0 1rem;
+      }
+
+      details:hover {
+        cursor: pointer;
+      }
+
+      details[opem] {
+        padding: 0.5rem;
+      }
+
+      details[open] summary {
+        border-bottom: 2px solid #fff;
+        margin-bottom: 8px;
       }
 
     </style>
@@ -84,17 +109,32 @@
 
     <p>Paragraph for reference, paragraph for reference, paragraph for reference, paragraph for reference, paragraph for reference, paragraph for reference.</p>
 
-    <dl>
-      <dt>Humous</dt>
-      <dd>A thick dip/sauce generally made from chick peas blended with tahini, lemon juice, salt, garlic, and other ingredients.</dd>
-      <dt>Pitta</dt>
-      <dd>A soft, slightly leavened flatbread.</dd>
-      <dt>Halloumi</dt>
-      <dd>A semi-hard, unripened, brined cheese with a higher-than-usual melting point, usually made from goat/sheep milk.</dd>
-      <dt>Green salad</dt>
-      <dd>That green healthy stuff that many of us just use to garnish kebabs.</dd>
-    </dl>
 
-
+    <ul>
+      <li>
+        <details>
+          <summary>Humous</summary>
+          A thick dip/sauce generally made from chick peas blended with tahini, lemon juice, salt, garlic, and other ingredients.
+        </details>
+      </li>
+      <li>
+        <details>
+          <summary>Pitta</summary>
+          A soft, slightly leavened flatbread.
+        </details>
+      </li>
+      <li>
+        <details>
+          <summary>Halloumi</summary>
+          A semi-hard, unripened, brined cheese with a higher-than-usual melting point, usually made from goat/sheep milk.
+        </details>
+      </li>
+      <li>
+        <details>
+          <summary>Green salad</summary>
+          That green healthy stuff that many of us just use to garnish kebabs.
+        </details>
+      </li>
+    </ul>
   </body>
 </html>
