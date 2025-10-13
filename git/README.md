@@ -23,16 +23,16 @@ history with tools like github.
 
 ## Tasks
 
-1. If you are using your own machine then [install git](https://github.com/git-guides/install-git). If you're using a CIS lab machine then you will need to make sure that it is booted into Linux to access the command line, or run git with bash prompt from Windows. For git bash from Windows on a CIS PC you need to first launch Git client via AppsAnywhere, then search for git: Git Bash will be there as an option.
+1. If you are using your own machine then [install git](https://github.com/git-guides/install-git) if you don't already have it. If you're using a CIS lab machine then you will need to make sure that it is booted into Linux to access the command line, or run git with bash prompt from Windows. For git bash from Windows on a CIS PC you need to first launch Git client via AppsAnywhere, then search for git: Git Bash will be there as an option.
 
 2. Register with [GitHub
-   education](https://education.github.com/students) to get a range of
+   education](https://education.github.com/students) if you haven't already, to get a range of
    benefits, including unlimited private repositories. _Choose a
    username that doesn't identify you_ for privacy's sake. (You don't
-   need to wait for registration to complete before starting the tutorial.)
+   need to wait for registration to complete before starting the tutorial.) You should aim to keep the same github account as long as possible to show a history of activity.
 
 3. Using the command line (Terminal in OSX or Linux, command prompt or git bash on Windows), 
  complete the [Software Carpentry git tutorial](http://swcarpentry.github.io/git-novice/) apart from section 14 Supplemental: Using Git from RStudio. If you want to develop your command line skills then (another time) try [UNIX/Linux shell
    tutorial](https://github.com/stevenaeola/proglabs_js/tree/main/shell)
 
-4. If you finish the other tasks you might like to understand more about how git works by reading [git from the bottom up](https://jwiegley.github.io/git-from-the-bottom-up/).
+4. If you finish the other tasks you might like to understand more about how git works by reading [git from the bottom up](https://jwiegley.github.io/git-from-the-bottom-up/). Or you could look at ways of [collaborating with git](../git_collaboration/README.md)
