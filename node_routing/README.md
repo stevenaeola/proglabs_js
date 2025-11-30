@@ -149,7 +149,7 @@
    state. Officially, according to
    [REST](https://en.wikipedia.org/wiki/Representational_state_transfer), POST is only for adding new
    entries, and PUT or PATCH should be used for updating entries. But in practice many APIs,
-   including e.g. [twitter](https://developer.twitter.com/en/docs/api-reference-index), use POST for
+   including e.g.[X]](https://developer.twitter.com/en/docs/api-reference-index), use POST for
    updates too.
    
     * Create a new HTML form page called `update.html` by copying your `index.html` (or if you want you can include two separate
