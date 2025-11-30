@@ -32,7 +32,7 @@
   * Make the changes and re-run the programme and see if you are correct. (Note that you stop the program with Ctrl-C.)
 
 
-3. Read more about [http requests in node](https://nodejs.org/en/docs/guides/anatomy-of-an-http-transaction/). Try out the examples there. You may wish to refer to my [notes on http](https://github.com/stevenaeola/progblack_lectures/tree/main/http)
+3. Read more about [http requests in node](https://nodejs.org/en/learn/http/anatomy-of-an-http-transaction). Try out the examples there. You may wish to refer to my [notes on http](https://github.com/stevenaeola/progblack_lectures/tree/main/http)
 
 4. If you get all of this done you have time to look at some other related topics:
   * [Blocking vs non-blocking](https://nodejs.org/en/docs/guides/blocking-vs-non-blocking/)
