@@ -8,7 +8,9 @@
     <script>
      let button = document.getElementById("squeeze");
      function shout(){
-	     alert("... and I squeak");
+	    //alert("... and I squeak");
+        button.setAttribute("style", `position: absolute; left: ${Math.random() * 95}%; top: ${Math.random() * 95}%`)
+
      }
      button.addEventListener("click", shout);
     </script>
