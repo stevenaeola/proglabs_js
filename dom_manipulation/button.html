@@ -10,7 +10,10 @@
      function shout(){
 	     alert("... and I squeak");
      }
+  
      button.addEventListener("click", shout);
+     button.addEventListener("mouseover", () => button.style.backgroundColor = "yellow")
+     button.addEventListener("mouseleave", () => button.style.backgroundColor = "ghostwhite")
     </script>
     </body>
 </html>

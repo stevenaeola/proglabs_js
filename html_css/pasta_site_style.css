@@ -1,0 +1,87 @@
+html {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 10px;
+  }
+
+  h2 {
+    font-size: 2rem;
+    color: aliceblue;
+    background-color:thistle;
+    border-radius: 5pt;
+    padding: 2mm;
+    border-color: azure;
+    border-width: 3mm;
+  }
+
+  ul,ol,dl,p {
+    font-size: 1.5rem;
+  }
+
+  li, p {
+    line-height: 1.5;
+    color: black;
+  }
+
+  /* Unordered list styles */
+
+  ul {
+    padding-left: 2rem;
+    list-style-type: none;
+  }
+
+  ul li {
+    padding-left: 2rem;
+    background-image: url(star.svg);
+    background-position: 0 0;
+    background-size: 1.6rem 1.6rem;
+    background-repeat: no-repeat;
+  }
+
+  ol {
+    list-style-type: upper-roman;
+    font-weight: bold;
+  }
+
+  /* Description list styles */
+
+  dd, dt {
+    line-height: 1.5;
+  }
+
+  dt {
+    font-weight: bold;
+  }
+
+  form.wrapper {
+    border-color: thistle;
+    background-color: aliceblue;
+    fill-opacity: 0.6;
+    border-style: groove;
+    padding: 10em;
+  }
+
+  input {
+    padding: 5mm;
+    border-radius: 7em;
+    background-color:ghostwhite;
+    margin: 5mm;
+  }
+
+  #toastPitta:hover {
+    font-size: larger;
+  }
+
+  label {
+    font-weight: bold;
+  }
+
+  body {
+    background-image: url("https://media.istockphoto.com/vectors/italian-pasta-seamless-pattern-vector-id1247401433?k=20&m=1247401433&s=612x612&w=0&h=PF11Jq_AUqZ5On5RhdLIM4otFTKoYwyNrNa2W-9t1VQ=");
+    background-color: transparent;
+  }
+
+  .textArea {
+    background-color: ghostwhite;
+    border-color: black;
+    border-radius: 2em;
+  }
