@@ -8,8 +8,11 @@
       /* General styles */
 
       html {
-        font-family: Helvetica, Arial, sans-serif;
+        font-family: 'Comic Sans MS', cursive;
         font-size: 10px;
+        background-color: purple;
+        color: yellow;
+        text-align: center;
       }
 
       h2 {
@@ -33,7 +36,6 @@
 
       ul li {
         padding-left: 2rem;
-        background-image: url(star.svg);
         background-position: 0 0;
         background-size: 1.6rem 1.6rem;
         background-repeat: no-repeat;
@@ -58,6 +60,8 @@
     </style>
   </head>
   <body>
+    <img src="https://www.moorishdips.co.uk/media/3dypfpod/5060425720025-_hh_moorish-150g_smokedhumous_visual_230523-1-2.png" alt="some humous" width="25%" id="humousImg"><br>
+    Click the humous for a surprise!!
     <h2>Shopping (unordered) list</h2>
 
     <p>Paragraph for reference, paragraph for reference, paragraph for reference, paragraph for reference, paragraph for reference, paragraph for reference.</p>
@@ -94,6 +98,23 @@
       <dt>Green salad</dt>
       <dd>That green healthy stuff that many of us just use to garnish kebabs.</dd>
     </dl>
+
+    <script>
+      const humousButton = document.getElementById("humousImg");
+      const colors = ["green", "red", "blue", "purple", "yellow", "orange", "brown", "pink", "cyan"]
+
+      humousButton.addEventListener("click", function(){
+        console.log("hello")
+
+        let rand1 = Math.floor(Math.random() * colors.length);
+        let rand2 = Math.floor(Math.random() * colors.length);
+        while (rand1 == rand2) {
+          rand2 = Math.floor(Math.random() * colors.length);
+        }
+        document.querySelector("html").style.backgroundColor = colors[rand1];
+        document.querySelector("html").style.color = colors[rand2];
+      })
+    </script>
 
 
   </body>
