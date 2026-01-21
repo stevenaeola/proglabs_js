@@ -4,60 +4,30 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <title>Styling lists</title>
-    <style>
-      /* General styles */
+    <link rel=stylesheet href="./styling-lists.css">
 
-      html {
-        font-family: Helvetica, Arial, sans-serif;
-        font-size: 10px;
-      }
-
-      h2 {
-        font-size: 2rem;
-      }
-
-      ul,ol,dl,p {
-        font-size: 1.5rem;
-      }
-
-      li, p {
-        line-height: 1.5;
-      }
-
-      /* Unordered list styles */
-
-      ul {
-        padding-left: 2rem;
-        list-style-type: none;
-      }
-
-      ul li {
-        padding-left: 2rem;
-        background-image: url(star.svg);
-        background-position: 0 0;
-        background-size: 1.6rem 1.6rem;
-        background-repeat: no-repeat;
-      }
-
-      /* Ordered list styles */
-
-      ol {
-        list-style-type: upper-roman;
-      }
-
-      /* Description list styles */
-
-      dd, dt {
-        line-height: 1.5;
-      }
-
-      dt {
-        font-weight: bold;
-      }
-
-    </style>
+    <!-- Bootstrap -->
+    <link rel=stylesheet href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"></script>
+    <script src="./styling-lists.js"></script>
   </head>
   <body>
+    <div class=containerised>
+      <div class="pos-f-t">
+        <div id="navbar-content">
+          <div class="navbar-content-inner">
+              <a href="">Home</a>
+              <a href="">About</a>
+          </div>
+        </div>
+        <nav class="navbar">
+          <button id="navbar-button" class="navbar-toggler">
+          <span class="navbar-toggler-icon"></span>
+          </button>
+        </nav>
+      </div>
+    </div>
+
     <h2>Shopping (unordered) list</h2>
 
     <p>Paragraph for reference, paragraph for reference, paragraph for reference, paragraph for reference, paragraph for reference, paragraph for reference.</p>

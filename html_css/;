@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Styling lists</title>
+    <link rel=stylesheet href="./styling-lists.css">
+
+    <!-- Bootstrap -->
+    <link rel=stylesheet href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+
+    <h2>Pasta</h2>
+    <div class=containerised>
+      <div class="pos-f-t">
+        <div class="collapse" id="navbarToggleExternalContent">
+          <div>
+            <h4 class="text-white">Collapsed content</h4>
+            <span class="text-muted">Toggleable via the navbar brand.</span>
+          </div>
+        </div>
+        <nav class="navbar navbar-dark">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+          </button>
+        </nav>
+      </div>
+    </div>
+
+
+    <p>Paragraph for reference, paragraph for reference, paragraph for reference, paragraph for reference, paragraph for reference, paragraph for reference.</p>
+
+    <ul>
+      <li>Humous</li>
+      <li>Pitta</li>
+      <li>Green salad</li>
+      <li>Halloumi</li>
+    </ul>
+
+    <h2>Recipe (ordered) list</h2>
+
+    <p>Paragraph for reference, paragraph for reference, paragraph for reference, paragraph for reference, paragraph for reference, paragraph for reference.</p>
+
+    <ol start="4">
+      <li>Toast pitta, leave to cool, then slice down the edge.</li>
+      <li>Fry the halloumi in a shallow, non-stick pan, until browned on both sides.</li>
+      <li>Wash and chop the salad.</li>
+      <li>Fill pitta with salad, humous, and fried halloumi.</li>
+    </ol>
+
+    <h2>Ingredient description list</h2>
+
+    <p>Paragraph for reference, paragraph for reference, paragraph for reference, paragraph for reference, paragraph for reference, paragraph for reference.</p>
+
+    <dl>
+      <dt>Humous</dt>
+      <dd>A thick dip/sauce generally made from chick peas blended with tahini, lemon juice, salt, garlic, and other ingredients.</dd>
+      <dt>Pitta</dt>
+      <dd>A soft, slightly leavened flatbread.</dd>
+      <dt>Halloumi</dt>
+      <dd>A semi-hard, unripened, brined cheese with a higher-than-usual melting point, usually made from goat/sheep milk.</dd>
+      <dt>Green salad</dt>
+      <dd>That green healthy stuff that many of us just use to garnish kebabs.</dd>
+    </dl>
+
+
+  </body>
+</html>
