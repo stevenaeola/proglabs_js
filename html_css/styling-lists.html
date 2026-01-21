@@ -4,60 +4,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <title>Styling lists</title>
-    <style>
-      /* General styles */
-
-      html {
-        font-family: Helvetica, Arial, sans-serif;
-        font-size: 10px;
-      }
-
-      h2 {
-        font-size: 2rem;
-      }
-
-      ul,ol,dl,p {
-        font-size: 1.5rem;
-      }
-
-      li, p {
-        line-height: 1.5;
-      }
-
-      /* Unordered list styles */
-
-      ul {
-        padding-left: 2rem;
-        list-style-type: none;
-      }
-
-      ul li {
-        padding-left: 2rem;
-        background-image: url(star.svg);
-        background-position: 0 0;
-        background-size: 1.6rem 1.6rem;
-        background-repeat: no-repeat;
-      }
-
-      /* Ordered list styles */
-
-      ol {
-        list-style-type: upper-roman;
-      }
-
-      /* Description list styles */
-
-      dd, dt {
-        line-height: 1.5;
-      }
-
-      dt {
-        font-weight: bold;
-      }
-
-    </style>
+    <link rel="stylesheet" href="styles.css">
   </head>
-  <body>
+  <body class="center">
     <h2>Shopping (unordered) list</h2>
 
     <p>Paragraph for reference, paragraph for reference, paragraph for reference, paragraph for reference, paragraph for reference, paragraph for reference.</p>
@@ -95,6 +44,36 @@
       <dd>That green healthy stuff that many of us just use to garnish kebabs.</dd>
     </dl>
 
+    <div class="flexRow">
+      <div>
+        <img class="smallImage roundrect" src="https://kagi.com/proxy/Carrot-fruits.jpg?c=UlKb5gkMQ1WKMBQZSZmjEu7tupQK7m_55Grw8fh4duJFgKZw3dw5RVsJvuykHqnBwfTOlmW_0qGs9OZMYnLSY562u9637YZolglXKIwpQ3EJMPi_IPlZnT-8ZwzHWxUo"/>
+      </div>
 
+      <div>
+        <img class="smallImage roundrect" src="https://kagi.com/proxy/Feb-2013-0721.jpg?c=xpO4k8XZTLAStn3DXrf_rumnkjTcQ6U5P3maAxdYLmgUBLbJXcdbzFbCN8PiFTn61SifPnh3jsYCxYLXZEjE2QJRw7KfNvVZ_7LD95cHzzCZBuJcERjn6h3YePP19alt"/>
+      </div>
+
+      <div>
+        <img class="smallImage roundrect" src="https://kagi.com/proxy/broccoli-256933.jpg?c=sXl5pmiKnPnI-jndPhUqd-HTo6Z57k2UEpaZwx3e6PDp_NNnwOLE0-HyBKZ8imZ9gY_LKKDFV6zwtmHmktZyswNL-n-BZViUeBDZ5PNCfYTMG7MOfsBJzm5TsTYLlbUF"/>
+      </div>
+    </div>
+
+    <h2>Why C++ is better than Python</h2>
+
+    C++ is superior to Python for a wide range of reasons. Primarily, C++ is good, and C++ is bad.
+
+    <ul>
+      <li><span class="bold">Performance:</span> C++ is a lot faster than Python, since it compiles down to an executable rather than using interpreted bytecode</li>
+
+      <li><span class="bold">Static Typing:</span> C++ provides static typing, meaning programs must be designed efficiently</li>
+
+      <li><span class="bold">CUDA and OpenCL:</span>HPC libraries such as CUDA and OpenCL are best supported by C++, allowing programmers to make use of low-level hardware and increased parallelism</li>
+
+      <li><span class="bold">Proof by Induction</span>Python is written in C, and therefore is inferior to C. Since C is also inferior to C++, Python &lt C &lt C++</li>
+
+      <li><span class="bold">C++ is Cool:</span> I'm running out of reasons to support C++ here, but C++ is undeniably quite cool</li>
+    </ul>
+
+    <div class="footerThing"/>
   </body>
 </html>

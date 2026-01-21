@@ -1,0 +1,63 @@
+html {
+	padding-bottom: 25px
+}
+
+body {
+	font-family: Arial, sans-serif;
+}
+
+h1 {
+	font-family: Times, serif;
+}
+
+h2 {
+	font-size: 1.75rem;
+	font-family: Times, serif;
+}
+
+.center {
+    position: absolute;
+    width: 50%;
+    height: 10px;
+    top: -5%;
+    left: 50%;
+    bottom: 5%;
+    margin-left: -25%; /* margin is -0.5 * dimension */
+    margin-top: 5%;
+    margin-bottom: -5%;
+}
+
+.flexRow {
+	flex-direction: row;
+	align-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.flexRow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flexRow div {
+  margin: 10px;
+}
+
+.flexRow .smallImage {
+	width: 200px;
+	height: 120px;
+	flex: 1 0 21%;
+}
+
+.roundrect {
+	border-radius: 15px;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.footerThing {
+	padding-bottom: 50px;
+}
