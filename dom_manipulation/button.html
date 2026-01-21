@@ -4,6 +4,13 @@
 
     <body>
     <button id='squeeze'>Squeeze me</button>
+
+    <button id="explode">Click for an explosion</button>
+
+    <div id = "big-bang-container">
+        <img id="big-bang" src = "" alt = "" width="">
+        <p id="source"></p>
+    </div>
     
     <script>
      let button = document.getElementById("squeeze");
@@ -11,6 +18,23 @@
 	     alert("... and I squeak");
      }
      button.addEventListener("click", shout);
+
+
+     function explode(){
+        let bigbang = document.getElementById("big-bang");
+        bigbang.src ="https://media1.giphy.com/media/oe33xf3B50fsc/giphy.gif?cid=790b76114db5a549792bc4662d60b843dede32301dc997ae&rid=giphy.gif&ct=g";
+        bigbang.alt = "Massive Explosion Gif";
+        let container = document.getElementById("big-bang-container");
+        let credit = document.getElementById("source");
+        let big_text = document.createElement("h1")
+        container.append(big_text);
+        big_text.innerHTML= "BANG!";
+        credit.innerHTML = "Source: <a href = 'https://media1.giphy.com/media/oe33xf3B50fsc/giphy.gif?cid=790b76114db5a549792bc4662d60b843dede32301dc997ae&rid=giphy.gif&ct=g'> Here</a>";
+    }
+
+     let explosion_button = document.getElementById("explode");
+     explosion_button.addEventListener("click", explode);
+     
     </script>
     </body>
 </html>
