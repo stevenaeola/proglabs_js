@@ -8,7 +8,14 @@
     <script>
      let button = document.getElementById("squeeze");
      function shout(){
-	     alert("... and I squeak");
+        let x = Math.random();
+        x = x*1080;
+        let y = Math.random();
+        y = y*1980;
+        button.style.marginTop = (x) + "px"; 
+        button.style.marginLeft = (y) + "px"; 
+        
+	    
      }
      button.addEventListener("click", shout);
     </script>
