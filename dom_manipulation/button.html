@@ -8,8 +8,9 @@
     <script>
      let button = document.getElementById("squeeze");
      function shout(){
-	     alert("... and I squeak");
-     }
+        let elapsed = performance.now() / 1000; // ms to seconds
+	     alert(`It took you ${elapsed} seconds to squeeze me ... \n ... and I squeak`);
+     }  
      button.addEventListener("click", shout);
     </script>
     </body>
