@@ -1,16 +1,73 @@
 <!DOCTYPE html>
 <html>
-    <head><title>JavaScript Button Example</title></head>
+	<head>
+		<title>JavaScript Button Example</title>
+	</head>
 
-    <body>
-    <button id='squeeze'>Squeeze me</button>
-    
-    <script>
-     let button = document.getElementById("squeeze");
-     function shout(){
-	     alert("... and I squeak");
-     }
-     button.addEventListener("click", shout);
-    </script>
-    </body>
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+
+		body {
+			background: rgb(242, 227, 255);
+			background: linear-gradient(139deg, rgba(242, 227, 255, 1) 25%, rgba(148, 147, 253, 1) 66%, rgba(69, 196, 252, 1) 100%);
+
+			width: 100vw;
+			height: 100vh;
+
+			display: grid;
+			place-items: center;
+		}
+
+		button {
+			width: 500px;
+			height: 600px;
+
+			background-color: rgb(16, 159, 255);
+			color: white;
+
+			outline: none;
+			border: 2px solid rgb(188, 188, 220);
+			border-radius: 50px;
+
+			cursor: pointer;
+
+			font-size: 60px;
+
+			transition: 0.5s ease;
+		}
+
+		button:hover {
+			width: 50%;
+		}
+
+		.squished {
+			font-size: x-small;
+			width: 10% !important;
+			height: 10% !important;
+		}
+	</style>
+
+	<body>
+		<button id="squeeze">Squeeze me</button>
+
+		<script>
+			let button = document.getElementById("squeeze");
+
+			function squeeze() {
+				if (!button.classList.contains("squished")) {
+					button.classList.add("squished");
+					button.textContent = "Help Me!!";
+				} else {
+					button.classList.remove("squished");
+					button.textContent = "Squeeze Me";
+				}
+			}
+
+			button.addEventListener("click", squeeze);
+		</script>
+	</body>
 </html>
