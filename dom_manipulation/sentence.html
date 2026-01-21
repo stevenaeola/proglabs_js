@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sentence Maker</title>
+</head>
+<body>
+    <label for="verbs">Inputs verbs:</label>
+    <textarea id="verbs" name="verbs" rows="3"></textarea>
+    <label for="adjectives">Inputs adjectives:</label>
+    <textarea id="adjectives" name="adjectives" rows="3"></textarea>
+    <label for="adverbs">Inputs adverbs:</label>
+    <textarea id="adverbs" name="adverbs" rows="3"></textarea>
+    <label for="nouns">Inputs nouns:</label>
+    <textarea id="nouns" name="nouns" rows="3"></textarea>
+    <br>
+    <button id="button">Make a Sentence</button>
+    <div id="placer"></div>
+    <script>
+        let button = document.getElementById("button");
+        let placer = document.getElementById("placer");
+        let verbsTextarea = document.getElementById("verbs");
+        let adjectivesTextarea = document.getElementById("adjectives");
+        let adverbsTextarea = document.getElementById("adverbs");
+        let nounsTextarea = document.getElementById("nouns");
+
+        function maker(verbsArray, adjectivesArray, adverbsArray, nounsArray) {
+            console.log(verbsArray);
+            placer.insertAdjacentHTML('afterbegin', 'The ' + adjectivesArray[random(adjectivesArray)] + ' ' + nounsArray[random(nounsArray)] + ' ' + verbsArray[random(verbsArray)] + ' ' + adverbsArray[random(adverbsArray)]);
+        }
+
+        function random(words) {
+            return Math.floor(Math.random() * words.length);
+        }
+
+        button.addEventListener('click', function() {
+            // Get the content from each textarea and split into arrays
+            let verbsArray = verbsTextarea.value.split(" ");
+            let adjectivesArray = adjectivesTextarea.value.split(" ");
+            let adverbsArray = adverbsTextarea.value.split(" ");
+            let nounsArray = nounsTextarea.value.split(" ");
+            // Call the maker function with the textarea contents
+            maker(verbsArray, adjectivesArray, adverbsArray, nounsArray);
+        });
+    </script>
+</body>
+</html>

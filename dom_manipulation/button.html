@@ -1,16 +1,32 @@
 <!DOCTYPE html>
 <html>
-    <head><title>JavaScript Button Example</title></head>
+    <head>
+        <title>JavaScript Button Example</title>
+        <style>
+        #image{
+            display: none;
+        }
+        </style>
+
+    </head>
 
     <body>
-    <button id='squeeze'>Squeeze me</button>
-    
+    <button id='squeeze'>Don't press</button>
+    <img id = 'image' src="Assets/boom.avif" alt="Boom"/>
     <script>
      let button = document.getElementById("squeeze");
      function shout(){
-	     alert("... and I squeak");
+	     alert("Boom!");
      }
-     button.addEventListener("click", shout);
+     function show(){
+        document.getElementById('image').style.display = 'block';
+        document.getElementById('squeeze').style.display = "none";
+     }
+     function handleClick() {
+            shout();
+            show();
+        }
+     button.addEventListener("click", handleClick);
     </script>
     </body>
 </html>
