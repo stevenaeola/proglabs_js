@@ -1,0 +1,12 @@
+:root {
+    --billOpacity: 0;
+}
+
+.billImg {
+    opacity: var(--billOpacity);
+    position: fixed;
+}
+
+#squeeze {
+    position: absolute;
+}
