@@ -1,16 +1,25 @@
 <!DOCTYPE html>
 <html>
-    <head><title>JavaScript Button Example</title></head>
+    <head><title>JavaScript Button</title></head>
 
     <body>
-    <button id='squeeze'>Squeeze me</button>
+    <button id='press'>DO NOT PRESS</button>
     
     <script>
-     let button = document.getElementById("squeeze");
+     let button = document.getElementById("press");
      function shout(){
-	     alert("... and I squeak");
+	     alert("I said DO NOT PRESS");
      }
-     button.addEventListener("click", shout);
+     let index = 0;
+     const colors = ['yellow', 'orange', 'red'];
+     button.addEventListener("click", function onClick(){
+        
+        button.style.backgroundColor = colors[index];
+        shout()
+        index = index >= colors.length - 1 ? 0: index + 1;
+     });
     </script>
     </body>
 </html>
+
+<!-- Button colour change code from https://bobbyhadz.com/blog/javascript-change-button-color-onclick-->
