@@ -7,6 +7,11 @@
     <style>
       /* General styles */
 
+	  :root {
+		--bg-color: rgb(44, 43, 63);
+		--fg-accent-color: rgb(241, 245, 248);
+	  }
+
       html {
         font-family: Helvetica, Arial, sans-serif;
         font-size: 10px;
@@ -55,12 +60,28 @@
         font-weight: bold;
       }
 
+	  .full-width-bg {
+		background: var(--bg-color);
+		box-shadow: 0 0 0 100vmax var(--bg-color);
+		clip-path: inset(0 -100vmax);
+		
+	  }
+
+	  .accent-fg {
+		color: var(--fg-accent-color);
+	  }
+
     </style>
   </head>
   <body>
     <h2>Shopping (unordered) list</h2>
 
     <p>Paragraph for reference, paragraph for reference, paragraph for reference, paragraph for reference, paragraph for reference, paragraph for reference.</p>
+
+	<section class="full-width-bg accent-fg">
+		<h2>A lovely and well thought out change</h2>
+		<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae vel id minus voluptatum fugiat nisi esse ullam qui perspiciatis, libero tempora consectetur incidunt. Voluptate eveniet cum, dolores quo recusandae maiores.</p>
+	</section>
 
     <ul>
       <li>Humous</li>
