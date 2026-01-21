@@ -7,9 +7,28 @@
     
     <script>
      let button = document.getElementById("squeeze");
+     let numOfClicks = Number(0);
      function shout(){
 	     alert("... and I squeak");
      }
+     function change(){
+        if (numOfClicks <= 1){
+            button.innerHTML="Don't do that again";  
+        } else if (numOfClicks <= 4) {
+            button.innerHTML="i mean it. it hurts. ";
+        } else if (numOfClicks <= 6) {
+            button.innerHTML="y o u   a re   ab o u t   t o     exp e r ie n c e    a     wo  rl  d    o f        pai n ";
+        } else if (numOfClicks <= 7) {
+            button.innerHTML="wi t h       w h ic  h       y o u       ar  e      no  t    fam  i l i  a  r ";
+        } else if (numOfClicks <= 8) {
+            button.innerHTML="g0o D   B  y 4";
+            document.body.style.backgroundColor = "red";
+        } else {
+            window.close();
+        }
+        numOfClicks += 1;
+    }   
+     button.addEventListener("click", change);
      button.addEventListener("click", shout);
     </script>
     </body>
