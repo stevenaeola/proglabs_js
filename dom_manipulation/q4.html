@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sentance Generator English</title>
+</head>
+
+<body>
+    <h3>Adjectives</h3>
+    <textarea name="adjectives" id="adjectives" cols="30" rows="10">big,small</textarea>
+    <h3>Nouns</h3>
+    <textarea name="nouns" id="nouns" cols="30" rows="10">dog,cat</textarea>
+    <h3>Verbs</h3>
+    <textarea name="verbs" id="verbs" cols="30" rows="10">runs,sleeps</textarea>
+    <h3>Adverbs</h3>
+    <textarea name="adverbs" id="adverbs" cols="30" rows="10">quickly,funnily</textarea>
+    <br>
+    <button id="requester">Request a sentance</button>
+    <br>
+    <div id="results">[Sentance will appear here]</div>
+
+    <script>
+        function generate() {
+            let adjectives = document.querySelector("#adjectives").value.split(",");
+            let nouns = document.querySelector("#nouns").value.split(",");
+            let verbs = document.querySelector("#verbs").value.split(",");
+            let adverbs = document.querySelector("#adverbs").value.split(",");
+
+            let result = "The "
+            result += adjectives[Math.floor(Math.random() * adjectives.length)].toLowerCase() + " ";
+            result += nouns[Math.floor(Math.random() * nouns.length)].toLowerCase() + " ";
+            result += verbs[Math.floor(Math.random() * verbs.length)].toLowerCase() + " ";
+            result += adverbs[Math.floor(Math.random() * adverbs.length)].toLowerCase() + ".";
+            document.querySelector("#results").innerHTML = result;
+        }
+
+        let button = document.querySelector("#requester");
+        button.addEventListener("click", generate);
+
+    </script>
+</body>
+
+</html>
