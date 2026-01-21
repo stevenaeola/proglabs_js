@@ -13,7 +13,8 @@
       }
 
       h2 {
-        font-size: 2rem;
+        font-family: Brush Script MT;
+        font-size: 3rem;
       }
 
       ul,ol,dl,p {
@@ -47,11 +48,13 @@
 
       /* Description list styles */
 
-      dd, dt {
+      a, dd, dt {
         line-height: 1.5;
       }
 
-      dt {
+      a, dt {
+        --pasta: #ff5b00;
+        color: var(--pasta);
         font-weight: bold;
       }
 
@@ -63,17 +66,17 @@
     <p>Paragraph for reference, paragraph for reference, paragraph for reference, paragraph for reference, paragraph for reference, paragraph for reference.</p>
 
     <ul>
-      <li>Humous</li>
-      <li>Pitta</li>
-      <li>Green salad</li>
-      <li>Halloumi</li>
+      <a href="#hummus"><li>Humous<sup>[1]</sup></li></a>
+      <a href="#pitta"><li>Pitta<sup>[2]</sup></li></a>
+      <a href="#salad"><li>Green salad<sup>[3]</sup></li></a>
+      <a href="#halloumi"><li>Halloumi<sup>[4]</sup></li></a>
     </ul>
 
     <h2>Recipe (ordered) list</h2>
 
     <p>Paragraph for reference, paragraph for reference, paragraph for reference, paragraph for reference, paragraph for reference, paragraph for reference.</p>
 
-    <ol start="4">
+    <ol start="1">
       <li>Toast pitta, leave to cool, then slice down the edge.</li>
       <li>Fry the halloumi in a shallow, non-stick pan, until browned on both sides.</li>
       <li>Wash and chop the salad.</li>
@@ -85,13 +88,13 @@
     <p>Paragraph for reference, paragraph for reference, paragraph for reference, paragraph for reference, paragraph for reference, paragraph for reference.</p>
 
     <dl>
-      <dt>Humous</dt>
+      <a id="hummus" href="https://en.wikipedia.org/wiki/Hummus" target="_blank">Humous</a>
       <dd>A thick dip/sauce generally made from chick peas blended with tahini, lemon juice, salt, garlic, and other ingredients.</dd>
-      <dt>Pitta</dt>
+      <a id="pitta" href="https://en.wikipedia.org/wiki/Pitta" target="_blank">Pitta</a>
       <dd>A soft, slightly leavened flatbread.</dd>
-      <dt>Halloumi</dt>
+      <a id="halloumi" href="https://en.wikipedia.org/wiki/Halloumi" target="_blank">Halloumi</a>
       <dd>A semi-hard, unripened, brined cheese with a higher-than-usual melting point, usually made from goat/sheep milk.</dd>
-      <dt>Green salad</dt>
+      <a id="salad" href="https://en.wikipedia.org/wiki/Salad" target="_blank">Green salad</a>
       <dd>That green healthy stuff that many of us just use to garnish kebabs.</dd>
     </dl>
 
