@@ -3,12 +3,15 @@
     <head><title>JavaScript Button Example</title></head>
 
     <body>
+    <h1 id="heading">Hello</h1>
     <button id='squeeze'>Squeeze me</button>
     
     <script>
      let button = document.getElementById("squeeze");
      function shout(){
 	     alert("... and I squeak");
+         const message = document.getElementById("heading")
+         message.innerHTML = message.textContent.toUpperCase()
      }
      button.addEventListener("click", shout);
     </script>
