@@ -1,0 +1,66 @@
+
+/* General styles */
+
+html {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 10px;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+ul,ol,dl,p {
+  font-size: 1.5rem;
+}
+
+li, p {
+  line-height: 1.5;
+}
+
+/* Unordered list styles */
+
+ul {
+  padding-left: 2rem;
+  list-style-type: none;
+}
+
+ul li {
+  padding-left: 2rem;
+  background-image: url(star.svg);
+  background-position: 0 0;
+  background-size: 1.6rem 1.6rem;
+  background-repeat: no-repeat;
+}
+
+/* Ordered list styles */
+
+ol {
+  list-style-type: upper-roman;
+}
+
+/* Description list styles */
+
+dd, dt {
+  line-height: 1.5;
+}
+
+dt {
+  font-weight: bold;
+}
+.page {
+  border-radius: 1rem;
+  padding: 1em;
+  margin: 1em;
+  box-shadow: 8px 8px 20px 4px rgba(0.1,0.1,0.1,0.15);
+}
+.cookbook {
+  background: rgba(253, 248, 209, 0.8);
+}
+.notebook {
+  background: rgba(254, 203, 255, 0.8);
+}
+.sciencebook {
+  background: rgba(184, 247, 254, 0.8);
+}
+
