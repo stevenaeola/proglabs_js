@@ -4,60 +4,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <title>Styling lists</title>
-    <style>
-      /* General styles */
-
-      html {
-        font-family: Helvetica, Arial, sans-serif;
-        font-size: 10px;
-      }
-
-      h2 {
-        font-size: 2rem;
-      }
-
-      ul,ol,dl,p {
-        font-size: 1.5rem;
-      }
-
-      li, p {
-        line-height: 1.5;
-      }
-
-      /* Unordered list styles */
-
-      ul {
-        padding-left: 2rem;
-        list-style-type: none;
-      }
-
-      ul li {
-        padding-left: 2rem;
-        background-image: url(star.svg);
-        background-position: 0 0;
-        background-size: 1.6rem 1.6rem;
-        background-repeat: no-repeat;
-      }
-
-      /* Ordered list styles */
-
-      ol {
-        list-style-type: upper-roman;
-      }
-
-      /* Description list styles */
-
-      dd, dt {
-        line-height: 1.5;
-      }
-
-      dt {
-        font-weight: bold;
-      }
-
-    </style>
+    <link rel="stylesheet" type="text/css" href="styles.css">
   </head>
   <body>
+    <h1> Styling lists</h1>
+    
     <h2>Shopping (unordered) list</h2>
 
     <p>Paragraph for reference, paragraph for reference, paragraph for reference, paragraph for reference, paragraph for reference, paragraph for reference.</p>
@@ -73,7 +24,7 @@
 
     <p>Paragraph for reference, paragraph for reference, paragraph for reference, paragraph for reference, paragraph for reference, paragraph for reference.</p>
 
-    <ol start="4">
+    <ol>
       <li>Toast pitta, leave to cool, then slice down the edge.</li>
       <li>Fry the halloumi in a shallow, non-stick pan, until browned on both sides.</li>
       <li>Wash and chop the salad.</li>
@@ -85,13 +36,18 @@
     <p>Paragraph for reference, paragraph for reference, paragraph for reference, paragraph for reference, paragraph for reference, paragraph for reference.</p>
 
     <dl>
-      <dt>Humous</dt>
+      
+      <dt><h3>Humous</h3></dt>
+      <dd> <img src="https://i0.wp.com/saucydressings.com/wp-content/uploads/2020/06/humous.jpg?fit=800%2C601&ssl=1" width="200"></dd>
       <dd>A thick dip/sauce generally made from chick peas blended with tahini, lemon juice, salt, garlic, and other ingredients.</dd>
-      <dt>Pitta</dt>
+      <dt><h3>Pitta</h3></dt>
+      <dd> <img src="https://hips.hearstapps.com/hmg-prod/images/delish-190621-homemade-pita-0159-landscape-pf-1567692674.jpg?crop=1xw:0.8441943127962085xh;center,top&resize=1200:*" width = 300></dd>
       <dd>A soft, slightly leavened flatbread.</dd>
-      <dt>Halloumi</dt>
+      <dt><h3>Halloumi</h3></dt>
+      <dd> <img src="https://www.euractiv.com/wp-content/uploads/sites/2/2021/01/shutterstock_444100357-800x450.jpg" width = 300></dd>
       <dd>A semi-hard, unripened, brined cheese with a higher-than-usual melting point, usually made from goat/sheep milk.</dd>
-      <dt>Green salad</dt>
+      <dt><h3>Green salad</h3></dt>
+      <dd> <img src="https://www.thespruceeats.com/thmb/dLm92KvGvS8zqlR_sw6UCwHUWbE=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/sandys-wilted-lettuce-with-hot-bacon-dressing-3061232-hero-01-5e012d6d24b24b8db86c91012aa65ca6.jpg" width = 300></dd>
       <dd>That green healthy stuff that many of us just use to garnish kebabs.</dd>
     </dl>
 
